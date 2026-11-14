@@ -13,6 +13,7 @@ Help households, especially married couples, choose the healthier of two product
 Head & Shoulders versus a protein shampoo. How do we compare the two products?
 
 - **Inputs:** two product photos (front and back) plus their ingredient lists. Read the photos to get the brand, the claims (for example "organic" or "non-GMO"), the ingredients in order, the additives and the nutrition panel. If a label can't be read, say so instead of guessing.
+- **Ingredient pull check:** before scoring, check that the app actually pulled the product's **full ingredient list**: the right product and variant, the label list rather than a "key ingredients" marketing list, and a plausible formula (e.g. a shampoo lists water and a cleansing agent). If the check fails, re-pull or ask for a back-label photo (`reference/06-label-reading-guide.md` §6).
 - **Scenarios:**
   - Post two pictures of two products
   - Type product details for two products (web link or barcode)
@@ -61,3 +62,4 @@ Keep each file to one topic so that search within the project finds the right on
 |---|---|
 | 2026-11-14 | Added guardrail: US sale websites only for online product lookups |
 | 2026-11-14 | Designated the Sri Sri Tattva USA product page for Protein Shampoo |
+| 2026-11-14 | Added the ingredient pull check step |

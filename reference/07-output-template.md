@@ -30,6 +30,7 @@
 |---|---|---|
 | **Wellbeing Index** | NN / 100 (🟢/🟡/🟠/🔴) <⚠️ Provisional: incomplete ingredient list> | NN / 100 (🟢/🟡/🟠/🔴) |
 | **Data coverage** | Full list / <N> known ingredients (<source>) | Full list / … |
+| **Ingredient pull check** (`06` §6) | ✅ PASS / ⚠️ PARTIAL / ❌ FAIL (checks failed: …) | ✅ / ⚠️ / ❌ |
 | **Quality ROI** | NN.N | NN.N |
 | **Does the job it's bought for?** | Yes / No / Unclear | Yes / No / Unclear |
 | **Biggest concern** | <ingredient or claim> | <ingredient or claim> |
@@ -47,6 +48,7 @@
 - **Allergens:** <list or "None of the major allergens found">
 - **Identifiers:** <FSSAI / licence / NDC / certifier / lot / expiry>
 - **Unreadable parts:** <list or "None">
+- **Ingredient pull check:** <PASS / PARTIAL / FAIL> · source <url> · checks failed <list> · next step <re-pull / photo / none>
 
 ### Product B: <…>
 <same fields>
@@ -119,6 +121,7 @@ New label terms found: <term → added to 03-key-terms-registry.md / "none">
 
 | # | Registry | Query | Date | Result | Effect |
 |---|---|---|---|---|---|
+| 0 | Ingredient pull check (`06` §6) | <source URL> | … | PASS / PARTIAL / FAIL | Warning / confidence |
 | 1 | FDA Recalls | … | … | … | … |
 
 **References**
@@ -135,6 +138,7 @@ New label terms found: <term → added to 03-key-terms-registry.md / "none">
 
 - [ ] Every ingredient of concern has a tier **and** a named authority
 - [ ] Every claim has a status
+- [ ] **Ingredient pull check run for each product**, with the result shown; a FAIL was re-pulled or a photo requested
 - [ ] Unreadable text is marked, not guessed
 - [ ] Every product is scored; any product without a full ingredient list carries the ⚠️ warning, a data-coverage note, and "pending the full label" in the verdict
 - [ ] Sub-score arithmetic adds up; caps checked

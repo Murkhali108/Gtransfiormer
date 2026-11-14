@@ -149,6 +149,7 @@ The same weights apply to **both** supplements and personal care, so every produ
 
 Every product gets a Wellbeing Index, even when data is missing. When data is missing, the score comes with a clear warning.
 
+0. **Check the ingredient pull first.** Before any scoring, run the ingredient pull check in `06-label-reading-guide.md` §6. It confirms the right product, the full list (not just "key ingredients"), and a plausible formula (water and a cleanser in a shampoo, for example). **FAIL** → re-pull from the designated page or ask for a back-label photo. Score with the warning only if neither works.
 1. **Never guess.** If part of the label can't be read or isn't published, say so (`[UNREADABLE: …]` / `[NOT AVAILABLE: …]`). Never fill the gap from memory or from a "typical" formula.
 2. **Score from what is known.** Apply sections 3.1–3.5 to the ingredients and claims that *are* known:
    - **Ingredient Safety, Additives, Nutrition Balance:** deduct only for known ingredients.
@@ -165,7 +166,7 @@ Every product gets a Wellbeing Index, even when data is missing. When data is mi
 **Confidence:**
 - **High:** full label read, and all ingredients covered by sources.
 - **Medium:** 1–3 ingredients with no authoritative data, or a minor unreadable section.
-- **Low:** the full ingredient list is not available, a sub-score was left out, or more than 3 ingredients are not covered by sources.
+- **Low:** the ingredient pull check failed, the full ingredient list is not available, a sub-score was left out, or more than 3 ingredients are not covered by sources.
 
 ---
 

@@ -1,6 +1,6 @@
 # 06 · Label-Reading Guide
 
-**Topic:** How to read product photos (front and back), ingredient order, serving sizes and nutrition or supplement panels, and what to do when a label can't be read.
+**Topic:** How to read product photos (front and back), ingredient order, serving sizes and nutrition or supplement panels, how to check that the ingredient pull is correct, and what to do when a label can't be read.
 **Last reviewed:** 2026-11-14
 
 > **Golden rule:** if a label can't be read, **say so; never guess.** Write `[UNREADABLE: <what and where>]`, or `[NOT AVAILABLE: <what>]` when a web source doesn't publish it.
@@ -112,22 +112,62 @@ Record each field with a **confidence** mark: ✅ read clearly · ⚠️ partly 
 
 ---
 
-## 6. Hand-off to scoring
+## 6. Ingredient pull check (required before scoring)
 
-After extraction, build this record per product, then follow `01` → `03`/`04`/`05` → `07`.
+> **Why this step exists:** an app or web lookup can "succeed" but return the wrong thing: only the advertised key ingredients, a different variant, or the marketing text instead of the label. **Never score until the pull has passed this check.** If it fails, re-pull or ask for a photo. If that isn't possible, score with the ⚠️ warning (`01` §4, Missing data).
+
+Run all 8 checks on **every product**, every time.
+
+| # | Check | How to check | Fails when… |
+|---|---|---|---|
+| 1 | **Right source** | The page is the designated product page (`02` §7) or another US sale website, and the URL is recorded | No URL, a non-US site, or a different product page |
+| 2 | **Right product** | The brand, product name, **variant** and **size** match the user's request or photo | E.g. the 2-in-1 or the 7 mL sachet instead of the 200 mL shampoo |
+| 3 | **Full list, not "key ingredients"** | The text pulled is the label's ingredient list ("Ingredients:" / INCI list), not a "Key ingredients" or "Benefits" section | Only hero ingredients are listed (e.g. "Green gram, Fenugreek, Chickpea extract") |
+| 4 | **Has a base** | Water-based products (shampoo, conditioner, lotion) list **water/aqua**, usually first | No water in a shampoo or lotion |
+| 5 | **Has a functional ingredient for the job** | A shampoo or soap lists at least one **cleansing agent** (surfactant, e.g. "…sulfate", "…sulfonate", "…betaine", "…glucoside", "…isethionate", saponified oils). A supplement has a **Supplement Facts** panel | A shampoo with no cleanser |
+| 6 | **Has a preservative** (water-based products) | E.g. phenoxyethanol, sodium benzoate, potassium sorbate, parabens, isothiazolinones | No preservative in a water-based product. Flag it, don't fail on it alone; some formulas use other preservation systems |
+| 7 | **Plausible length** | Shampoos and lotions usually list **10–30** ingredients; supplements list every dietary ingredient in the panel | A shampoo with fewer than 6 ingredients |
+| 8 | **Consistent with claims** | Claims such as "sulfate-free" or "paraben-free" can be checked against the list | A claim can't be checked because the list is missing |
+
+**Result**
+
+| Status | Rule | What happens next |
+|---|---|---|
+| ✅ **PASS** | Checks 1–5 and 7 pass | Score normally |
+| ⚠️ **PARTIAL** | The list is real but some items are unconfirmed, or check 6 or 8 fails | Score, with the incomplete-list warning |
+| ❌ **FAIL** | Any of checks 1–5 or 7 fails | **Re-pull** from the designated page, or ask for a back-label photo. If neither works, score from what is known with the warning, show "Ingredient pull: FAILED" in the report, and set confidence to Low |
+
+**Record the result** in the hand-off record (section 7) and in the report's sources table (`07` §6):
+
+```yaml
+pull_check:
+  status: PASS | PARTIAL | FAIL
+  source_url: "<url>"
+  pulled_at: 2026-11-14
+  checks_failed: [3, 4, 5, 7]
+  note: "Only 'key ingredients' returned; no water, cleanser or preservative"
+  next_step: "Re-pull ingredient list from designated page, or request back-label photo"
+```
+
+---
+
+## 7. Hand-off to scoring
+
+After extraction **and the ingredient pull check (section 6)**, build this record per product, then follow `01` → `03`/`04`/`05` → `07`.
 
 ```yaml
 product: "<brand> <name> <variant>"
 category: personal_care | supplement
-market: US | India
-net_qty: { value: 340, unit: mL }
-price: { value: 390, currency: INR, date: 2026-11-14 }
+market: US
+net_qty: { value: 13.5, unit: fl oz }
+price: { value: 8.99, currency: USD, date: 2026-11-14 }
 claims: ["...", "..."]
 actives: [{ name: "Pyrithione zinc", strength: "1%" }]
 ingredients: ["Water", "Sodium Laureth Sulfate", "..."]
 panel: { serving: "33 g", per_serving: { protein_g: 24, added_sugars_g: 2, sodium_mg: 130 } }
 allergens: ["milk", "soy"]
-identifiers: { fssai: "", ayush_licence: "", ndc: "", certifier: "", lot: "", expiry: "" }
+identifiers: { ndc: "", certifier: "", lot: "", expiry: "" }
 unreadable: ["ingredients after 'Fragrance' (glare)"]
 source: photo | web | hybrid
+pull_check: { status: PASS | PARTIAL | FAIL, source_url: "", checks_failed: [] }
 ```

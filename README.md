@@ -10,11 +10,12 @@ Helps households, especially married couples, choose the healthier of two produc
 1. **Input:** front and back photos, a web link or barcode, or both (hybrid). Demo product universe: **Whole Foods** and **Sri Sri Tattva**, as sold in the US.
    🇺🇸 **Online lookups use US sale websites only** (e.g. the brand's US site, Amazon.com, Walmart.com). See [PROBLEM_STATEMENT.md](PROBLEM_STATEMENT.md) and `reference/02-approved-sources.md` §7.
 2. **Read the label** → `reference/06-label-reading-guide.md`
-3. **Check ingredients** → `reference/04-additives-and-ingredients-of-concern.md`
-4. **Verify claims** → `reference/03-key-terms-registry.md` + `reference/05-regulatory-registries.md`
-5. **Score** → `reference/01-scoring-methodology.md`
-6. **Cite only approved sources** → `reference/02-approved-sources.md`
-7. **Write the report** → `reference/07-output-template.md` (see the examples in `reference/08-sample-comparisons.md`)
+3. **Check the ingredient pull** → `reference/06-label-reading-guide.md` §6. Is it the right product, the full list (not just "key ingredients"), and a plausible formula? FAIL → re-pull or ask for a back-label photo
+4. **Check ingredients** → `reference/04-additives-and-ingredients-of-concern.md`
+5. **Verify claims** → `reference/03-key-terms-registry.md` + `reference/05-regulatory-registries.md`
+6. **Score** → `reference/01-scoring-methodology.md`
+7. **Cite only approved sources** → `reference/02-approved-sources.md`
+8. **Write the report** → `reference/07-output-template.md` (see the examples in `reference/08-sample-comparisons.md`)
 
 ## Topic files (one topic per file)
 

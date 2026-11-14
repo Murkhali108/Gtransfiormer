@@ -9,7 +9,7 @@
 
 | # | Products | Market | Shows |
 |---|---|---|---|
-| 1 | **Head & Shoulders Classic Clean vs Sri Sri Tattva Protein Shampoo** (real) | US | A real web-label evaluation; scoring with an **incomplete ingredient list** (⚠️ warning, softened verdict); a fit-for-purpose check |
+| 1 | **Head & Shoulders Classic Clean vs Sri Sri Tattva Protein Shampoo** (real) | US | A real web-label evaluation; a **failed ingredient pull check** (key ingredients only); scoring with an **incomplete ingredient list** (⚠️ warning, softened verdict); a fit-for-purpose check |
 | 2 | Protein powder: whey vs plant (fictional) | US ($) | A false claim, a missing DSHEA disclaimer, an organic seal verified in the OID |
 | 3 | Hair oil: Ayurvedic blend vs pure coconut (fictional) | US ($) | A partly unreadable label → ⚠️ Provisional score; a "chemical-free" claim |
 
@@ -38,9 +38,29 @@
 |---|---|---|
 | **Wellbeing Index** | 68 / 100 🟡 ⚠️ **Provisional**: list not fully confirmed | 80 / 100 🟢 ⚠️ **Provisional**: incomplete ingredient list |
 | **Data coverage** | Active + 18 known inactive ingredients (brand page, DailyMed) | 3 known ingredients (key ingredients only: srisritattvausa.com, Amazon.com) |
+| **Ingredient pull check** (`06` §6) | ⚠️ PARTIAL (check 6 flagged) | ❌ **FAIL** (checks 3, 4, 5, 7) |
 | **Quality ROI** | Needs price | Needs price |
 | **Does the job it's bought for?** | Dandruff: **Yes** (pyrithione zinc 1%) | Dandruff: No active declared · Dry hair: unclear |
 | **Biggest concern** | Zinc pyrithione (banned in EU cosmetics†), fragrance, two harsh surfactants first on the list | A hair-loss claim (drug-like for a US cosmetic); most of the formula is unknown |
+
+## 0. Ingredient pull check
+
+> ❌ **The Sri Sri Tattva ingredient pull failed.** What was pulled is the brand's **"key ingredients"** marketing list, not the label's ingredient list. A real shampoo must contain water and at least one cleansing agent, and none appear. The score below is therefore based on incomplete data.
+
+| # | Check | Head & Shoulders Classic Clean | Sri Sri Tattva Protein Shampoo |
+|---|---|---|---|
+| 1 | Right source | ✅ Brand US page + DailyMed | ✅ Designated page (https://srisritattvausa.com/products/protein-shampoo?_pos=1&_psq=protein+sham&_psid=ff0d59a8f&_ss=e) + Amazon.com |
+| 2 | Right product (variant, size) | ✅ Classic Clean shampoo (not 2-in-1) | ✅ Protein Shampoo, 200 mL |
+| 3 | Full list, not "key ingredients" | ✅ Ingredient list (some items unconfirmed) | ❌ Only "key ingredients": Green gram, Fenugreek, Chickpea extract |
+| 4 | Has a base (water) | ✅ Water #1 | ❌ No water |
+| 5 | Has a cleansing agent | ✅ SLS, SLES, cocamidopropyl betaine | ❌ No cleanser |
+| 6 | Has a preservative | ⚠️ Not confirmed (piroctone olamine is an antifungal) | ❌ None listed |
+| 7 | Plausible length | ✅ 19 items | ❌ 3 items |
+| 8 | Consistent with claims | ✅ "Paraben free" can be checked | ❌ "Sulfate-free", "paraben-free" and "vegan" can't be checked |
+| | **Result** | ⚠️ **PARTIAL** | ❌ **FAIL** |
+| | **Next step** | Confirm the full DailyMed list | **Re-pull the ingredient list from the designated page**, or a photo of the US pack's back label |
+
+Because the re-pull wasn't possible in this session, both products are scored from what is known (`01` §4), and Sri Sri Tattva's confidence is **Low**.
 
 ## 1. Product snapshot
 
@@ -63,7 +83,8 @@
   - Fenugreek "helps reduce premature graying and hair loss" [srisritattvausa.com, ingredient description]
   - "Natural Ayurvedic Haircare for Normal to Dry, Damaged Hair"; "Sulfate-Free Formula"; "for Healthy, Shiny and Strong Locks" [Amazon.com listing title]
 - **Key ingredients (as published):** Green gram, Fenugreek, Chickpea extract [srisritattvausa.com; Amazon.com]
-- **Full ingredient list:** `[NOT AVAILABLE: no US sale website publishes the complete INCI list]`
+- **Full ingredient list:** `[NOT AVAILABLE: no US sale website returned the complete INCI list]`
+- **Ingredient pull check:** ❌ FAIL (checks 3, 4, 5, 7). Only the key ingredients were returned. Next step: re-pull from the designated page or photograph the back label
 - **Allergens:** none of the US major allergens among the known ingredients (chickpea and green gram are legumes)
 
 ## 2. Ingredient risk check
@@ -155,6 +176,7 @@ The gap would normally make it a "Clear winner", but the higher-scoring product 
 | 1 | DailyMed (NLM/NIH): *Head and Shoulders Classic Clean, pyrithione zinc shampoo*, set ID f28a55cf-eb42-4a0d-a4a3-2bae72b58ac8. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f28a55cf-eb42-4a0d-a4a3-2bae72b58ac8 | Active ingredient, NDC, partial inactive list | 2026-11-14 (via search) |
 | 2 | Head & Shoulders US product page: https://www.headandshoulders.com/en-us/products/classic-clean-shampoo | Inactive list order, "Paraben Free", "24/7" claims | 2026-11-14 (via search) |
 | 3 | H-E-B listing: https://www.heb.com/product-detail/head-shoulders-classic-clean-dandruff-shampoo/10662535 | "Pyrithione Zinc (1 %)" | 2026-11-14 (via search) |
+| 0 | Ingredient pull check (`06` §6) | H&S: ⚠️ PARTIAL · SST: ❌ FAIL (key ingredients only) | 2026-11-14 |
 | 4 | Sri Sri Tattva USA, **designated product page** (provided by the project owner): https://srisritattvausa.com/products/protein-shampoo?_pos=1&_psq=protein+sham&_psid=ff0d59a8f&_ss=e | Key ingredients, "paraben-free", "vegan", fenugreek hair-loss claim | 2026-11-14 (via search) |
 | 5 | Amazon.com: https://www.amazon.com/dp/B07GJZQ4HC | "Natural Ayurvedic", "Sulfate-Free Formula", "Healthy, Shiny and Strong Locks" | 2026-11-14 (via search) |
 | 6 | FDA: *Is it a cosmetic, a drug, or both?* https://www.fda.gov/cosmetics/cosmetics-laws-regulations/it-cosmetic-drug-or-both-or-it-soap | Hair-loss claims are drug claims | — |
@@ -168,6 +190,8 @@ Retailer pages (3, 5) are used **only to identify the product and its label text
 # Sample 2: Brand C Whey Protein (Chocolate) vs Brand D Organic Plant Protein
 
 **Date:** 2026-11-14 · **Market:** US (Whole Foods) · **Category:** Supplement · **Input:** Hybrid · **Confidence:** High
+
+> **Ingredient pull check (`06` §6):** Brand C ✅ PASS · Brand D ✅ PASS. Full labels with Supplement Facts panels.
 
 ## ⚡ Quick answer
 **Brand D** is the clear winner (87 vs 75): no additives, and its organic seal checks out. Brand C is better value per dollar, but one of its claims is false.
@@ -259,6 +283,8 @@ Retailer pages (3, 5) are used **only to identify the product and its label text
 
 **Date:** 2026-11-14 · **Market:** US · **Category:** Personal care · **Input:** Photos · **Confidence:** Low (part of Brand E's label is unreadable)
 
+> **Ingredient pull check (`06` §6):** Brand E ⚠️ PARTIAL (a real label list from the photo, but the last ~2 lines are unreadable) · Brand F ✅ PASS (oils are anhydrous, so checks 4–6 don't apply).
+>
 > ⚠️ **Full ingredient list not available for Brand E Herbal Hair Oil.** This score is based on **6 known ingredients** (read from the photo). About 2 lines after "Parfum" are hidden by glare. Ingredients we could not see may raise or lower the score. To complete it: a clearer photo of the back label.
 
 ## ⚡ Quick answer

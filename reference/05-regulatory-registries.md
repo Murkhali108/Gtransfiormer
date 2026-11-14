@@ -158,6 +158,7 @@ Paste this into every report (`07-output-template.md`, section 6).
 
 | # | Registry | Query used | Date searched | Result | Effect on score |
 |---|---|---|---|---|---|
+| 0 | Ingredient pull check (`06` §6) | `source URL` | YYYY-MM-DD | PASS / PARTIAL / FAIL (checks _) | Warning / confidence |
 | 1 | FDA Recalls / openFDA | `brand + product type` | YYYY-MM-DD | No match / Recall Class _ (lot _) | None / Cap _ |
 | 2 | FDA Import Alerts | `firm, country` | | | |
 | 3 | GRAS / Food Additive Status List | `ingredient` | | | |
