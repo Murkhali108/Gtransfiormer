@@ -148,6 +148,7 @@ The same weights apply to **both** supplements and personal care, so every produ
 ### Missing data
 - If the label can't be read, **say so; never guess.** Mark the affected sub-score *"Insufficient data"*.
 - Compute the WI from the remaining sub-scores with their weights rescaled to 100%, and label the result **Provisional**.
+- **No full ingredient list, no score.** If the full ingredient list can't be obtained (only "key ingredients" are published, or the back label is missing), Ingredient Safety, Additives, Processing Level and Nutrition Balance are all *Insufficient data*. **Do not publish a WI.** Report *"Not scored: full ingredient list needed"*, show the claim checks that are possible, and say what is needed to finish. Scoring only the advertised ingredients would make the product look cleaner than the evidence allows.
 - **Confidence:** High = full label read and all ingredients covered by sources. Medium = 1–3 ingredients with no authoritative data, or a minor unreadable section. Low = a sub-score missing or >3 ingredients uncovered.
 
 ---
@@ -203,7 +204,7 @@ A capped product can never win against an uncapped one.
 
 ---
 
-## 9. Worked arithmetic (personal care)
+## 9. Worked arithmetic (personal care, illustrative product)
 
 | Sub-score | Score | Weight | Points |
 |---|---|---|---|

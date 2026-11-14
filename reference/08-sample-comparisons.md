@@ -1,119 +1,149 @@
 # 08 · Sample Comparisons
 
-**Topic:** Three worked examples that set the standard for finished reports.
+**Topic:** Worked examples that set the standard for finished reports.
 **Last reviewed:** 2026-11-14
 
-> ⚠️ **All products here are made up** (Brands A–F). They show the method and the format; they are **not** ratings of real products. Registry results are illustrative. Ratings marked † assume the proposed EU source in `02` §5 is approved.
+> **Sample 1 uses real products** (the problem statement's use case), built from **public web labels only** (Scenario B in `06`). It shows how the tool handles a label that isn't fully published: it **does not guess**.
+> **Samples 2 and 3 use made-up products** (Brands C–F) to show the full method; their registry results are illustrative.
+> Ratings marked † assume the proposed EU source in `02` §5 is approved.
 
-| # | Category | Market | Shows |
+| # | Products | Market | Shows |
 |---|---|---|---|
-| 1 | Shampoo: anti-dandruff vs protein (the problem statement's use case) | India (₹) | Fit-for-purpose overrides a higher score; jurisdiction conflict (ZPT) |
-| 2 | Protein powder: whey vs plant | US ($) | A false claim, a missing DSHEA disclaimer, an organic seal verified in the OID |
-| 3 | Hair oil: Ayurvedic blend vs pure coconut | India (₹) | A partly unreadable label → Provisional score; a "chemical-free" claim |
+| 1 | **Head & Shoulders Classic Clean vs Sri Sri Tattva Protein Shampoo** (real) | US label / India | A real web-label evaluation; a product that is **not scored** because its full ingredient list isn't public; a fit-for-purpose check |
+| 2 | Protein powder: whey vs plant (fictional) | US ($) | A false claim, a missing DSHEA disclaimer, an organic seal verified in the OID |
+| 3 | Hair oil: Ayurvedic blend vs pure coconut (fictional) | India (₹) | A partly unreadable label → Provisional score; a "chemical-free" claim |
 
 ---
 
-# Sample 1: Brand A Anti-Dandruff Shampoo vs Brand B Protein Shampoo
+# Sample 1: Head & Shoulders Classic Clean vs Sri Sri Tattva Protein Shampoo
 
-**Date:** 2026-11-14 · **Market:** India · **Category:** Personal care · **Input:** Photos · **Confidence:** High
+**Date:** 2026-11-14 · **Category:** Personal care · **Input:** Web label / search (no photos) · **Confidence:** Low
+**Status:** ⏳ **Incomplete.** The verdict is held until the missing label data arrives (see "What we still need").
 
-> **Jurisdiction note:** India regulates shampoos under the Cosmetics Rules 2020 (CDSCO†). Until CDSCO is approved as a source, FDA rules (US) are used as the **reference standard** for actives and claims, and the report says so.
+> **Read this first**
+> - Both evaluations come from **public web labels**. The brand pages could not be opened directly from this session, so the facts below come from search results that quote DailyMed (the official US register of OTC drug labels, run by NIH) and the brands' own pages. Every fact is cited.
+> - **Head & Shoulders formulas differ by country and variant.** The label used here is the **US "Classic Clean" shampoo** (DailyMed set ID `f28a55cf-eb42-4a0d-a4a3-2bae72b58ac8`), the only full official label found. An Indian pack may differ.
+> - This is not a judgement of either brand's safety. It is not medical advice.
 
-## ⚡ Quick answer
-**Brand B** has the cleaner formula (79 vs 64). **But only Brand A treats dandruff.** If someone in the house has dandruff, Brand A does that job; otherwise choose Brand B.
+## ⚡ Quick answer (so far)
+- **Head & Shoulders Classic Clean:** provisional **68 / 100 🟡**. It contains an FDA-recognised anti-dandruff active, so it does the anti-dandruff job.
+- **Sri Sri Tattva Protein Shampoo:** **Not scored.** Its full ingredient list isn't published online; only three "key ingredients" are. We won't guess the rest.
+- **For dandruff:** only Head & Shoulders has a recognised anti-dandruff active. **For dry hair without dandruff:** we can't say which is better until we see Sri Sri Tattva's full back label.
 
-| | Brand A Anti-Dandruff | Brand B Protein |
+| | Head & Shoulders Classic Clean | Sri Sri Tattva Protein Shampoo |
 |---|---|---|
-| **Wellbeing Index** | 64 / 100 🟡 | 79 / 100 🟡 |
-| **Quality ROI** | 55.8 | 52.7 |
-| **Does the job it's bought for?** | Yes (dandruff) | Yes (cleansing); No (dandruff) |
-| **Biggest concern** | Zinc pyrithione (banned in EU cosmetics), MCI/MI | Fragrance; wheat protein for people with wheat allergy |
+| **Wellbeing Index** | 68 / 100 🟡 **(Provisional)** | **Not scored**: full ingredient list needed |
+| **Quality ROI** | Needs price | Needs price |
+| **Does the job it's bought for?** | Dandruff: **Yes** (pyrithione zinc 1%) | Dandruff: No active declared · Dry hair: unclear |
+| **Biggest concern** | Zinc pyrithione (banned in EU cosmetics†), fragrance, two harsh surfactants first on the list | Unknown: the full formula isn't published |
 
 ## 1. Product snapshot
 
-### Brand A Anti-Dandruff Shampoo
-- **Net quantity / price:** 340 mL · ₹390 (₹114.71 per 100 mL)
-- **Claims:** "Controls dandruff", "Clinically proven", "pH balanced"
-- **Active ingredient:** Zinc pyrithione 1%
-- **Ingredients:** 1. Water, 2. Sodium Laureth Sulfate, 3. Sodium Lauryl Sulfate, 4. Cocamidopropyl Betaine, 5. Glycol Distearate, 6. Zinc Pyrithione, 7. Sodium Chloride, 8. Dimethicone, 9. Fragrance, 10. Sodium Benzoate, 11. Guar Hydroxypropyltrimonium Chloride, 12. Magnesium Sulfate, 13. Sodium Xylenesulfonate, 14. Citric Acid, 15. Methylchloroisothiazolinone, 16. Methylisothiazolinone, 17. Blue 1
-- **Allergens:** None of the major allergens
-- **Unreadable parts:** None
+### Head & Shoulders Classic Clean Anti-Dandruff Shampoo (US label)
+- **Maker:** Procter & Gamble · **Type:** OTC drug (US) · NDC prefix 37000-071 [DailyMed]
+- **Net quantity / price:** sold in sizes including 13.5 fl oz and 28.2 fl oz [retailer listings]. **Price: not supplied.**
+- **Claims on the brand page:** "Paraben Free", "24/7 Dandruff Protection", "for daily use" [headandshoulders.com]
+- **Active ingredient:** **Pyrithione zinc 1%** (anti-dandruff) [DailyMed; H-E-B listing]
+- **Inactive ingredients, in the order on the brand page:** 1. Water, 2. Sodium Lauryl Sulfate, 3. Sodium Laureth Sulfate, 4. Cocamidopropyl Betaine, 5. Sodium Xylenesulfonate, 6. Zinc Carbonate, 7. Fragrance, 8. Sodium Chloride, 9. Dimethicone, 10. Guar Hydroxypropyltrimonium Chloride, 11. Piroctone Olamine, 12. Glycerin, 13. Trihydroxystearin [headandshoulders.com, quoted in search results]
+- **Also on the DailyMed label (position not confirmed):** Niacinamide, Polyquaternium-76, Neosetophoma Cerealis Extract, Blue 1, Red 33 [DailyMed]
+- **Unreadable / unconfirmed:** `[NOT CONFIRMED: the full DailyMed inactive list could not be opened; the published list may contain further items such as preservatives]`
+- **Allergens:** none of the major allergens in the confirmed list
 
-### Brand B Protein Shampoo
-- **Net quantity / price:** 300 mL · ₹450 (₹150.00 per 100 mL)
-- **Claims:** "Sulfate-free", "Paraben-free", "With natural proteins", "Strengthens hair"
-- **Active ingredient:** None declared
-- **Ingredients:** 1. Water, 2. Sodium C14-16 Olefin Sulfonate, 3. Cocamidopropyl Betaine, 4. Decyl Glucoside, 5. Hydrolyzed Wheat Protein, 6. Hydrolyzed Keratin, 7. Glycerin, 8. Panthenol, 9. Aloe Barbadensis Leaf Juice, 10. Sodium Chloride, 11. Fragrance, 12. Phenoxyethanol, 13. Ethylhexylglycerin, 14. Citric Acid, 15. Sodium Benzoate
-- **Allergens:** **Wheat** (hydrolyzed wheat protein)
-- **Unreadable parts:** None
+### Sri Sri Tattva Protein Shampoo, for dry to normal hair (200 mL)
+- **Maker:** Sri Veda Sattva Pvt Ltd (named on retailer pages) · **Market:** India
+- **Net quantity / price:** 200 mL. **Price: not supplied.**
+- **Claims:** "Ayurvedic", "natural ingredients" [srisritattva.com]; "Nourishes hair & reduces hair loss" [1mg]; "Provides strength & shine", "for dry to normal hair" [BigBasket]; "complies with all the safety and quality standards laid down by the AYUSH Ministry" [one retailer listing]
+- **Key ingredients (as published):** Green gram, Fenugreek, Chickpea extract [srisritattva.com; Swadesii; Garuda Life]
+- **Full ingredient list:** `[NOT AVAILABLE ONLINE: no retailer or brand page publishes the complete INCI list; one retailer says it appears only on the pack]`
+- **Licence number (AYUSH/drug licence):** `[NOT AVAILABLE ONLINE]`
 
 ## 2. Ingredient risk check
 
-| Product | Ingredient | Position | Tier | Why | Authority |
+| Product | Ingredient | Position | Tier | Why (plain language) | Authority |
 |---|---|---|---|---|---|
-| A | Zinc pyrithione | #6, **active** | Moderate† | An FDA-approved anti-dandruff active at 1–2% in rinse-off shampoo, but banned in EU cosmetics since 2022 as toxic to reproduction. Rinse-off use means short contact | [FDA, 21 CFR 358.710]; [EU Reg. 2021/1902]† |
-| A | Sodium laureth sulfate | #2 | Low | Can irritate skin and eyes; possible 1,4-dioxane traces (no product test found) | [PubChem]; [EPA] |
-| A | Sodium lauryl sulfate | #3 | Low | Can irritate with long contact | [PubChem] |
-| A | Cocamidopropyl betaine | #4 | Low | Occasional contact allergy | [FDA, allergens in cosmetics] |
-| A | Fragrance | #9 (additive) | Moderate | Undisclosed mixture; common allergy trigger | [FDA, MoCRA / allergens in cosmetics] |
-| A | MCI / MI | #15–16 (additive) | Moderate† | Strong skin sensitisers; EU allows them only in rinse-off products at ≤0.0015% | [EU Reg. 2017/1224]† |
-| A | Blue 1 | #17 (additive) | Low | Listed colour additive; rare allergy | [FDA, 21 CFR 74] |
-| B | Sodium C14-16 olefin sulfonate | #2 | Low | Irritant (a sulfonate, not a sulfate) | [PubChem] |
-| B | Cocamidopropyl betaine | #3 | Low | Occasional contact allergy | [FDA] |
-| B | Hydrolyzed wheat protein | #5 | Low (allergen) | Caution for people with wheat allergy | [FDA, allergens in cosmetics] |
-| B | Fragrance | #11 (additive) | Moderate | As above | [FDA] |
-| B | Phenoxyethanol | #12 (additive) | Low† | Irritation; EU limit 1% | [EU Annex V]† |
+| H&S | **Pyrithione zinc** | **active** | Moderate† | Approved by the FDA for dandruff at 1–2% in rinse-off shampoos. Banned in EU cosmetics since 2022 as a reproductive-toxicity hazard. In a shampoo it's rinsed off, so contact is short | [FDA, 21 CFR 358.710]; [EU Reg. 2021/1902]† |
+| H&S | Sodium lauryl sulfate | #2 | Low | Can irritate skin and eyes with long contact | [PubChem] |
+| H&S | Sodium laureth sulfate | #3 | Low | Mild irritant; possible 1,4-dioxane traces (no product test found → watch-point only) | [PubChem]; [EPA] |
+| H&S | Cocamidopropyl betaine | #4 | Low | Occasional contact allergy | [FDA, allergens in cosmetics] |
+| H&S | Fragrance | #7 (additive) | Moderate | Undisclosed mixture; a common cause of cosmetic allergy | [FDA, MoCRA / allergens in cosmetics] |
+| H&S | Blue 1, Red 33 | end (additive) | Low | FDA-listed colour additives; rare allergy | [FDA, 21 CFR 74] |
+| H&S | Piroctone olamine | #11 | No authoritative data found | Antifungal; no rating from a core approved source (EU limits it in cosmetics†) | — |
+| H&S | Neosetophoma cerealis extract | unconfirmed | No authoritative data found | — | — |
+| H&S | Zinc carbonate, niacinamide, glycerin, dimethicone, guar HPTC, polyquaternium-76 | — | Not flagged | — | — |
+| SST | Green gram, fenugreek, chickpea extract | unknown | Not flagged | Plant extracts; no concern found. Chickpea is a legume, so people with legume allergies may want to check | — |
+| SST | **Everything else** | — | **Cannot rate** | Full list not published | — |
 
-**Watch-points (not scored):** 1,4-dioxane in Brand A (SLES). No product-specific test or recall found.
+**Watch-points (not scored):** 1,4-dioxane (H&S, from SLES): no product test or recall found.
 
 ## 3. Claim verification
 
 | Product | Claim | Status | What we found |
 |---|---|---|---|
-| A | "Controls dandruff" | Consistent | ZPT 1% is within the FDA monograph range for rinse-off products |
-| A | "Clinically proven" | Unverifiable (−10) | No study cited on the pack |
-| A | "pH balanced" | Unverifiable (−10) | No legal definition; no pH value given |
-| B | "Sulfate-free" | Consistent | No sulfates listed. Note: it contains olefin sulfonate, a similar cleansing agent |
-| B | "Paraben-free" | Consistent | No parabens listed |
-| B | "With natural proteins" | Unverifiable (−10) | "Natural" has no legal definition for cosmetics; the proteins are hydrolysed (processed) |
-| B | "Strengthens hair" | Unverifiable (−10) | No evidence cited |
+| H&S | Anti-dandruff (Drug Facts use) | Consistent | Pyrithione zinc 1% is within the FDA monograph range for rinse-off products (21 CFR 358.710) |
+| H&S | "Paraben Free" | Consistent* | No parabens in the confirmed list (*the list may be incomplete) |
+| H&S | "24/7 Dandruff Protection" | Unverifiable (−10) | No legal definition; no study cited |
+| SST | "Ayurvedic" | Unverifiable (−10) | No AYUSH licence number seen online. A licence on the pack would make this Consistent |
+| SST | "Natural ingredients" | Unverifiable (−10) | "Natural" has no legal definition for cosmetics |
+| SST | "Nourishes hair & reduces hair loss" | Unverifiable (−10) | No evidence in approved sources |
+| SST | "Provides strength & shine" | Unverifiable (−10) | No evidence in approved sources |
+| SST | "Complies with AYUSH standards" | Unverifiable | AYUSH is a proposed source† and no licence was seen |
+| SST | "Protein shampoo" | Unverifiable | Protein sources (green gram, chickpea) are named, but their amounts are unknown |
 
 ## 4. Wellbeing Index
 
-| Sub-score | Weight | Brand A | Brand B |
+| Sub-score | Weight | Head & Shoulders | Sri Sri Tattva |
 |---|---|---|---|
-| Ingredient Safety | 35% | 70 | 85 |
-| Processing Level | 15% | 50 (P3) | 75 (P2) |
-| Additives | 15% | 39 | 66 |
-| Nutrition Balance (skin and hair) | 20% | 70 | 80 |
-| Claim Integrity | 15% | 80 | 80 |
-| **Wellbeing Index** | | **64** (63.85) | **79** (78.9) |
-| Caps | | None | None |
+| Ingredient Safety | 35% | 70 | Insufficient data |
+| Processing Level | 15% | 50 (P3: ethoxylated SLES) | Insufficient data |
+| Additives | 15% | 59 *(provisional)* | Insufficient data |
+| Nutrition Balance (skin and hair) | 20% | 70 | Insufficient data |
+| Claim Integrity | 15% | 90 | 60 |
+| **Wellbeing Index** | | **68 (Provisional)** (68.35) | **Not scored** |
+| Caps | | None found | — |
 
-- **A Ingredient Safety:** SLES −5, SLS −5, CAPB −5 (Low ×1.25, top five), ZPT −15 (Moderate ×1.25, active) = **70**
-- **A Additives:** 11 additives −33; fragrance −12; MCI/MI −12; Blue 1 −4 = **39**
-- **B Ingredient Safety:** olefin sulfonate −5, CAPB −5, wheat protein −5 = **85**
-- **B Additives:** 6 additives −18; fragrance −12; phenoxyethanol −4 = **66**
-- **A Nutrition Balance:** SLES (#2) −20 and SLS (#3) −10, both harsh surfactants among the first 3; dimethicone (#8) comes before the first preservative (no deduction) = **70**
-- **B Nutrition Balance:** olefin sulfonate (#2) −20; wheat protein, keratin, glycerin and panthenol all come before the preservative (no deduction) = **80**
+- **H&S Ingredient Safety:** SLS −5, SLES −5, CAPB −5 (Low ×1.25, top five), pyrithione zinc −15 (Moderate ×1.25, active) = **70**
+- **H&S Additives:** 7 confirmed additives (sodium xylenesulfonate, zinc carbonate, fragrance, sodium chloride, trihydroxystearin, Blue 1, Red 33) −21; fragrance −12; Blue 1 −4; Red 33 −4 = **59**. Provisional, because unconfirmed items could lower it
+- **H&S Nutrition Balance:** SLS (#2) −20, SLES (#3) −10; conditioning agents (dimethicone, guar) come before the first preservative-type ingredient (piroctone olamine) = **70**
+- **H&S Claim Integrity:** "24/7" −10 = **90**
+- **Sri Sri Tattva:** under `01` §4, a product with no full ingredient list gets no Wellbeing Index. Scoring only the three key ingredients would make the product look cleaner than the evidence allows
 
-| | Brand A | Brand B |
-|---|---|---|
-| Price per 100 mL | ₹114.71 | ₹150.00 |
-| **Quality ROI** | **55.8** | **52.7** |
+**Quality ROI:** not calculated. Prices weren't supplied, and the two products would need the same currency.
 
-## 5. Verdict
-**Better formula:** Brand B (**clear winner**, a 15-point gap).
-**Trade-offs**
-- Brand B has **no anti-dandruff active**. For dandruff, Brand A is the one that does the job, and its ZPT is used rinse-off at an FDA-approved strength.
-- Brand A gives slightly more value per rupee (ROI 55.8 vs 52.7), but carries more additives and two skin sensitisers.
+## 5. Verdict (held)
+
+**Better choice for the household:** ⏳ **Not decided yet.** One product can't be scored.
+
+**What we can already say**
+- **If someone has dandruff:** Head & Shoulders contains an FDA-recognised anti-dandruff active (pyrithione zinc 1%). Sri Sri Tattva doesn't declare one.
+- **Head & Shoulders trade-offs:** it starts with two strong cleansers (SLS, SLES), and it contains fragrance and an active that the EU no longer allows in cosmetics†. Rinse it off well.
+- **Sri Sri Tattva:** its herbal "protein" ingredients raise no concern, but its claims are unverified and the rest of its formula is unknown.
 
 **Who should be careful**
-- 🤧 **Allergies:** Brand A has fragrance and MCI/MI. Brand B has fragrance and **wheat protein**.
+- 🤧 **Allergies / sensitive skin:** Head & Shoulders has fragrance and cocamidopropyl betaine. Sri Sri Tattva is unknown; chickpea and green gram are legumes.
 - 👶 **Children:** keep both out of the eyes. No child-specific concern found in approved sources.
-- 🤰 **Pregnancy:** No authoritative data found on rinse-off ZPT exposure in pregnancy from US/Indian regulators. The EU classification is a hazard classification.
+- 🤰 **Pregnancy:** No authoritative data found from US or Indian regulators on rinse-off pyrithione zinc in pregnancy. The EU classification is a hazard classification†.
 
-**In-store tip:** If dandruff isn't the issue, pick Brand B. If it is, use Brand A only on the scalp and rinse well.
+### What we still need to finish this comparison
+1. A **photo of the back label** of Sri Sri Tattva Protein Shampoo: the full ingredient list and the AYUSH or drug licence number.
+2. The **Head & Shoulders variant and pack you would actually buy** (Indian packs differ from the US label used here): a front and back photo.
+3. **Prices and pack sizes** for both, in the same currency, to work out Quality ROI.
+
+**In-store tip:** On any "Ayurvedic" shampoo, turn the bottle over. A licence number and a full ingredient list should be printed there. If they aren't, the claims can't be checked.
+
+### Sources and checks
+
+| # | Source | What it gave | Date |
+|---|---|---|---|
+| 1 | DailyMed (NLM/NIH): *Head and Shoulders Classic Clean, pyrithione zinc shampoo*, set ID f28a55cf-eb42-4a0d-a4a3-2bae72b58ac8. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f28a55cf-eb42-4a0d-a4a3-2bae72b58ac8 | Active ingredient, NDC, partial inactive list | 2026-11-14 (via search) |
+| 2 | Head & Shoulders US product page: https://www.headandshoulders.com/en-us/products/classic-clean-shampoo | Inactive list order, "Paraben Free", "24/7" claims | 2026-11-14 (via search) |
+| 3 | H-E-B listing: https://www.heb.com/product-detail/head-shoulders-classic-clean-dandruff-shampoo/10662535 | "Pyrithione Zinc (1 %)" | 2026-11-14 (via search) |
+| 4 | Sri Sri Tattva product page: https://www.srisritattva.com/products/protein-shampoo-for-dry-to-normal-hair-200ml | Key ingredients, "Ayurvedic", "natural" | 2026-11-14 (via search) |
+| 5 | Tata 1mg: https://www.1mg.com/otc/sri-sri-tattva-protein-shampoo-nourishes-hair-reduces-hair-loss-otc330764 | "Nourishes hair & reduces hair loss" | 2026-11-14 (via search) |
+| 6 | BigBasket: https://bigbasket.com/pd/40262406/sri-sri-tattva-protein-shampoo-for-dry-to-normal-hair-provides-strength-shine-200-ml | "Strength & shine", "dry to normal hair" | 2026-11-14 (via search) |
+| 7 | FDA, 21 CFR 358.710 (anti-dandruff actives): https://www.ecfr.gov/current/title-21/section-358.710 | Pyrithione zinc 1–2% rinse-off | — |
+| 8 | FDA recalls / openFDA drug enforcement | Not yet searched for this product | To do |
+
+Retailer pages (3, 5, 6) are used **only to identify the product and its label text**. They are never the basis of a risk rating.
 
 ---
 
@@ -292,4 +322,4 @@
 
 ---
 
-> *These samples are for training and illustration. They are not medical advice and do not rate real products.*
+> *These samples are for training and illustration. They are not medical advice. Sample 1 reflects public web labels as of the date shown; formulas change and vary by market, so check the pack in hand. Samples 2 and 3 use fictional products.*
