@@ -123,7 +123,7 @@ Every front and back claim is checked against `03-key-terms-registry.md` and the
 
 ## 4. Weights and the Wellbeing Index
 
-**Wellbeing Index (WI) = Σ (sub-score × weight)**, rounded to a whole number.
+**Wellbeing Index (WI) = Σ (sub-score × weight)**, rounded to a whole number (halves round up, e.g. 81.5 → 82).
 
 The same weights apply to **both** supplements and personal care, so every product is scored on all five sub-scores.
 

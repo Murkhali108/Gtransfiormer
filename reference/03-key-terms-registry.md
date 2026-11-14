@@ -132,6 +132,7 @@
 | **Dermatologically tested / dermatologist recommended** | None | Unverifiable. "Tested" doesn't say what the result was |
 | **pH balanced** | None | Unverifiable unless a pH value is given |
 | **Anti-dandruff** (US) | An OTC drug claim. The product must contain a monograph active at an approved level: pyrithione zinc, selenium sulfide, coal tar, salicylic acid or sulfur (21 CFR 358.710); ketoconazole is approved separately | A "Drug Facts" box is required. Anti-dandruff claim with no active → **False** |
+| **Ayurvedic** (US) | None. In the US, a product sold as Ayurvedic is regulated as a cosmetic, drug or dietary supplement according to its intended use and claims (FDA) | Unverifiable. Drug-like claims ("treats hair loss") → Misleading or False |
 | **Ayurvedic** (India) | Ayurvedic drugs must be manufactured under a licence from the State Licensing Authority (Drugs & Cosmetics Act 1940/Rules 1945; AYUSH) | A licence number is required on the label; no licence → Unverifiable |
 | **Medicated** | Implies a drug | Must carry drug labeling, or else Misleading |
 

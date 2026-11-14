@@ -7,7 +7,8 @@ Helps households, especially married couples, choose the healthier of two produc
 
 ## How a comparison works
 
-1. **Input:** front and back photos, a web link or barcode, or both (hybrid). Demo product universe: **Whole Foods** and **Sri Sri Tattva**.
+1. **Input:** front and back photos, a web link or barcode, or both (hybrid). Demo product universe: **Whole Foods** and **Sri Sri Tattva**, as sold in the US.
+   🇺🇸 **Online lookups use US sale websites only** (e.g. the brand's US site, Amazon.com, Walmart.com). See [PROBLEM_STATEMENT.md](PROBLEM_STATEMENT.md) and `reference/02-approved-sources.md` §7.
 2. **Read the label** → `reference/06-label-reading-guide.md`
 3. **Check ingredients** → `reference/04-additives-and-ingredients-of-concern.md`
 4. **Verify claims** → `reference/03-key-terms-registry.md` + `reference/05-regulatory-registries.md`
@@ -35,4 +36,4 @@ Helps households, especially married couples, choose the healthier of two produc
 - **Process Flow diagram:** not yet in the shared Drive folder. Once added, map its steps to these files.
 
 ## Source document
-Derived from *1. Problem Statement* (project brief).
+Derived from *1. Problem Statement* (project brief). A tracked copy, including later changes, is in [PROBLEM_STATEMENT.md](PROBLEM_STATEMENT.md).

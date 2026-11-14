@@ -116,3 +116,28 @@ Apply these rules in order:
 Example: `FDA — 21 CFR 700.13, Use of mercury compounds in cosmetics — https://www.ecfr.gov/current/title-21/section-700.13`
 
 (eCFR at https://www.ecfr.gov is the official US government publication of the CFR and counts as Tier 1 when citing FDA or USDA rules.)
+
+---
+
+## 7. Product-information websites (US sale websites only)
+
+> **Constraint (Problem Statement, Guardrails):** online product lookups use **only websites that sell the product in the United States**.
+
+These websites are used **only to identify a product and read its label**: name, net quantity, price, ingredient list, claims and images. They are **never** a source for a risk rating, which comes from Tiers 1–2 above.
+
+| Allowed (sell in the US) | Examples |
+|---|---|
+| The brand's US website | headandshoulders.com/en-us, srisritattvausa.com |
+| US grocery and retail | wholefoodsmarket.com, amazon.com, walmart.com, target.com |
+| US pharmacies | cvs.com, walgreens.com |
+
+| Not allowed (sell outside the US) | Examples |
+|---|---|
+| A brand's non-US website | srisritattva.com (India), headandshoulders.ca |
+| Non-US retailers and pharmacies | bigbasket.com, 1mg.com, apollopharmacy.in, flipkart.com, nykaa.com, amazon.in |
+
+**Rules**
+1. If the only page for a product is on a non-US site, **don't use it**. Say: *"This product isn't listed on a US sale website."*
+2. Prices are taken in **USD** from the US listing, with the date.
+3. Official label registries are **not** sale websites and stay allowed: DailyMed (NIH) for OTC drug labels, and the NIH Dietary Supplement Label Database.
+4. If two US listings disagree, prefer the brand's US site, then the listing with a back-label image. Note the difference.

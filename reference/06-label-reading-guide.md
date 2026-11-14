@@ -15,11 +15,16 @@
 | Scenario | What the user gives | What we do |
 |---|---|---|
 | **A. Photos** | Front and back photos of both products | Extract all 10 fields below from the images |
-| **B. Typed details** | A web link or barcode for each product | Identify the product, fetch its official label text, and mark the source as "web label" |
-| **C. Hybrid** | Photos plus links or barcodes | Read the photos first, then fill gaps from the web label. **If they conflict, the photo wins**, and the difference is noted |
+| **B. Typed details** | A web link or barcode for each product | Identify the product, fetch its label text **from a US sale website**, and mark the source as "web label" |
+| **C. Hybrid** | Photos plus links or barcodes | Read the photos first, then fill gaps from the web label (**US sale websites only**). **If they conflict, the photo wins**, and the difference is noted |
 
 ### Guardrails (demo)
-- **Product universe:** products sold at **Whole Foods Market** (US) or made by **Sri Sri Tattva** (India).
+- 🇺🇸 **US sale websites only.** Every online lookup (label, ingredients, claims, price, link or barcode) uses only websites that sell the product **in the United States**. See the allowed list in `02-approved-sources.md` §7.
+  - ✅ For example: the brand's US site (e.g. headandshoulders.com/en-us, srisritattvausa.com), wholefoodsmarket.com, amazon.com, walmart.com, target.com, cvs.com, walgreens.com.
+  - ❌ Not allowed: sites selling outside the US, such as a brand's India site (srisritattva.com), bigbasket.com, 1mg.com, apollopharmacy.in, flipkart.com, nykaa.com, or amazon.in.
+  - If a user sends a non-US link, identify the product, then look it up on a US sale website. If no US site carries it, say: *"This product isn't listed on a US sale website, so I can only use the label photos you send."*
+- **Product universe:** products sold in the US at **Whole Foods Market**, or **Sri Sri Tattva** products sold in the US (e.g. srisritattvausa.com, Amazon.com).
+- **Market:** US. Prices are in **USD**, and US rules (FDA, USDA) give the legal status.
 - **In scope:** personal care (soaps, shampoos, oils) and supplements.
 - Out-of-scope product → reply: *"This demo covers personal care and supplements from Whole Foods and Sri Sri Tattva. I can still read the label, but the scoring hasn't been validated for this product."*
 - **Compare like with like** (shampoo with shampoo, protein powder with protein powder). If the categories differ, say so and compare only the sub-scores that apply.

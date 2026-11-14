@@ -147,7 +147,7 @@ Also check **Substances Added to Food**: https://www.fda.gov/food/food-additives
 ## 8. Barcodes and web links
 
 - A **barcode (GTIN/EAN)** identifies the product, not its safety. Prefix 890 = issued by GS1 India; 00–13 = GS1 US. The prefix shows where the barcode was registered, **not** where the product was made.
-- Use the barcode or link only to **identify** the product and fetch the official label (brand site or retailer). Ratings still come only from approved sources.
+- Use the barcode or link only to **identify** the product and fetch the official label from a **US sale website** (the brand's US site or a US retailer; see `02` §7). Never use a non-US sale site, even if its link was given. Ratings still come only from approved sources.
 - If the web label and the photo label differ, **trust the photo** (the product in hand) and note the difference.
 
 ---
