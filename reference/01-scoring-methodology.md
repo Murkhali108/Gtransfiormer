@@ -77,7 +77,10 @@ Additives are preservatives, colours, fragrance or flavour, sweeteners, fillers,
 
 The position multiplier from 3.1 applies to the **risk** deductions here, not to the −3 load.
 
-### 3.4 Nutrition Balance (supplements only)
+### 3.4 Nutrition Balance
+Both categories are scored with the same 20% weight. The checks differ because a supplement nourishes the body from inside and a personal-care product nourishes the skin or hair from outside.
+
+#### 3.4a Supplements: dietary nutrition
 This is based on one serving, with % Daily Value (%DV) taken from the label.
 
 | Finding | Deduction |
@@ -89,7 +92,20 @@ This is based on one serving, with % Daily Value (%DV) taken from the label.
 | Proprietary blend that hides individual amounts | −15 |
 | Fibre ≥10% DV | +5 (cap 100) |
 
-**Personal care:** shown as **N/A**, and its weight moves to the other sub-scores (see section 4).
+#### 3.4b Personal care: skin and hair nourishment
+This sub-score asks whether the formula **balances cleansing with nourishment**, or whether it strips and dries the skin or hair. It is the tool's own label-based rubric, like Processing Level, and is not a risk rating. Toxicity is handled in Ingredient Safety, and this sub-score never rates a harm.
+
+**Nourishing ingredients** are plant oils and butters, humectants (glycerin, panthenol, aloe), proteins and amino acids, ceramides, and conditioning agents (silicones, guar hydroxypropyltrimonium chloride, polyquaterniums).
+
+| Finding | Deduction |
+|---|---|
+| Harsh anionic surfactant (a sulfate or sulfonate, e.g. SLS, SLES, ammonium lauryl sulfate, olefin sulfonate) among the first 3 ingredients | −20 for the first, −10 for each additional one |
+| Drying alcohol (alcohol denat., SD alcohol, isopropyl alcohol) among the first 5 ingredients | −15 |
+| Nourishing ingredients appear only **after the first preservative**, so likely ≤1% (a "label-dressing" amount) | −10 |
+| **No** nourishing ingredient anywhere on the list | −20 |
+| Leave-on product (oil, lotion, cream) whose first ingredient is a nourishing oil, butter or humectant | +5 (cap 100) |
+
+If a section of the ingredient list can't be read, score from the readable part and mark the result **Provisional**.
 
 ### 3.5 Claim Integrity
 Every front and back claim is checked against `03-key-terms-registry.md` and the registries in `05-regulatory-registries.md`.
@@ -109,14 +125,16 @@ Every front and back claim is checked against `03-key-terms-registry.md` and the
 
 **Wellbeing Index (WI) = Σ (sub-score × weight)**, rounded to a whole number.
 
-| Sub-score | Supplements | Personal care |
-|---|---|---|
-| Ingredient Safety | 35% | 45% |
-| Processing Level | 15% | 15% |
-| Additives | 15% | 20% |
-| Nutrition Balance | 20% | N/A |
-| Claim Integrity | 15% | 20% |
-| **Total** | **100%** | **100%** |
+The same weights apply to **both** supplements and personal care, so every product is scored on all five sub-scores.
+
+| Sub-score | Weight (supplements and personal care) |
+|---|---|
+| Ingredient Safety | 35% |
+| Processing Level | 15% |
+| Additives | 15% |
+| Nutrition Balance | 20% (dietary nutrition §3.4a / skin and hair nourishment §3.4b) |
+| Claim Integrity | 15% |
+| **Total** | **100%** |
 
 ### Hard caps (these override the computed score)
 
@@ -161,7 +179,7 @@ Quality ROI     = WI ÷ Price per 100 × 100
 - ROI is a **tie-breaker and value signal only**. It never overrides a safety cap.
 - *Assumption to confirm with the project owner:* "qty" means net quantity in 100 mL or 100 g units.
 
-**Example:** WI 63, ₹390 for 340 mL → price per 100 mL = ₹114.71 → ROI = 63 ÷ 114.71 × 100 = **54.9**.
+**Example:** WI 64, ₹390 for 340 mL → price per 100 mL = ₹114.71 → ROI = 64 ÷ 114.71 × 100 = **55.8**.
 
 ---
 
@@ -189,11 +207,13 @@ A capped product can never win against an uncapped one.
 
 | Sub-score | Score | Weight | Points |
 |---|---|---|---|
-| Ingredient Safety | 70 | 0.45 | 31.5 |
+| Ingredient Safety | 70 | 0.35 | 24.5 |
 | Processing Level | 50 | 0.15 | 7.5 |
-| Additives | 39 | 0.20 | 7.8 |
-| Nutrition Balance | N/A | — | — |
-| Claim Integrity | 80 | 0.20 | 16.0 |
-| **WI** | | | **62.8 → 63 (Yellow)** |
+| Additives | 39 | 0.15 | 5.85 |
+| Nutrition Balance (skin and hair nourishment) | 70 | 0.20 | 14.0 |
+| Claim Integrity | 80 | 0.15 | 12.0 |
+| **WI** | | | **63.85 → 64 (Yellow)** |
+
+Nutrition Balance here: SLES and SLS are both among the first 3 ingredients (−20, −10); the conditioning agents come before the first preservative (no deduction) → 70.
 
 See `08-sample-comparisons.md` for full examples.

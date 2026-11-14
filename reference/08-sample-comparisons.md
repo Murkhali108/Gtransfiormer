@@ -20,12 +20,12 @@
 > **Jurisdiction note:** India regulates shampoos under the Cosmetics Rules 2020 (CDSCO†). Until CDSCO is approved as a source, FDA rules (US) are used as the **reference standard** for actives and claims, and the report says so.
 
 ## ⚡ Quick answer
-**Brand B** has the cleaner formula (79 vs 63). **But only Brand A treats dandruff.** If someone in the house has dandruff, Brand A does that job; otherwise choose Brand B.
+**Brand B** has the cleaner formula (79 vs 64). **But only Brand A treats dandruff.** If someone in the house has dandruff, Brand A does that job; otherwise choose Brand B.
 
 | | Brand A Anti-Dandruff | Brand B Protein |
 |---|---|---|
-| **Wellbeing Index** | 63 / 100 🟡 | 79 / 100 🟡 |
-| **Quality ROI** | 54.9 | 52.7 |
+| **Wellbeing Index** | 64 / 100 🟡 | 79 / 100 🟡 |
+| **Quality ROI** | 55.8 | 52.7 |
 | **Does the job it's bought for?** | Yes (dandruff) | Yes (cleansing); No (dandruff) |
 | **Biggest concern** | Zinc pyrithione (banned in EU cosmetics), MCI/MI | Fragrance; wheat protein for people with wheat allergy |
 
@@ -82,29 +82,31 @@
 
 | Sub-score | Weight | Brand A | Brand B |
 |---|---|---|---|
-| Ingredient Safety | 45% | 70 | 85 |
+| Ingredient Safety | 35% | 70 | 85 |
 | Processing Level | 15% | 50 (P3) | 75 (P2) |
-| Additives | 20% | 39 | 66 |
-| Nutrition Balance | N/A | N/A | N/A |
-| Claim Integrity | 20% | 80 | 80 |
-| **Wellbeing Index** | | **63** (62.8) | **79** (78.7) |
+| Additives | 15% | 39 | 66 |
+| Nutrition Balance (skin and hair) | 20% | 70 | 80 |
+| Claim Integrity | 15% | 80 | 80 |
+| **Wellbeing Index** | | **64** (63.85) | **79** (78.9) |
 | Caps | | None | None |
 
 - **A Ingredient Safety:** SLES −5, SLS −5, CAPB −5 (Low ×1.25, top five), ZPT −15 (Moderate ×1.25, active) = **70**
 - **A Additives:** 11 additives −33; fragrance −12; MCI/MI −12; Blue 1 −4 = **39**
 - **B Ingredient Safety:** olefin sulfonate −5, CAPB −5, wheat protein −5 = **85**
 - **B Additives:** 6 additives −18; fragrance −12; phenoxyethanol −4 = **66**
+- **A Nutrition Balance:** SLES (#2) −20 and SLS (#3) −10, both harsh surfactants among the first 3; dimethicone (#8) comes before the first preservative (no deduction) = **70**
+- **B Nutrition Balance:** olefin sulfonate (#2) −20; wheat protein, keratin, glycerin and panthenol all come before the preservative (no deduction) = **80**
 
 | | Brand A | Brand B |
 |---|---|---|
 | Price per 100 mL | ₹114.71 | ₹150.00 |
-| **Quality ROI** | **54.9** | **52.7** |
+| **Quality ROI** | **55.8** | **52.7** |
 
 ## 5. Verdict
-**Better formula:** Brand B (**clear winner**, a 16-point gap).
+**Better formula:** Brand B (**clear winner**, a 15-point gap).
 **Trade-offs**
 - Brand B has **no anti-dandruff active**. For dandruff, Brand A is the one that does the job, and its ZPT is used rinse-off at an FDA-approved strength.
-- Brand A gives slightly more value per rupee (ROI 54.9 vs 52.7), but carries more additives and two skin sensitisers.
+- Brand A gives slightly more value per rupee (ROI 55.8 vs 52.7), but carries more additives and two skin sensitisers.
 
 **Who should be careful**
 - 🤧 **Allergies:** Brand A has fragrance and MCI/MI. Brand B has fragrance and **wheat protein**.
@@ -210,12 +212,12 @@
 **Date:** 2026-11-14 · **Market:** India · **Category:** Personal care · **Input:** Photos · **Confidence:** Medium (part of Brand E's label is unreadable)
 
 ## ⚡ Quick answer
-**Brand F** is the clear winner (100 vs 82, provisional): one ingredient and no misleading claims. Neither product has evidence from an approved source that it reduces hair fall.
+**Brand F** is the clear winner (100 vs 85, provisional): one ingredient and no misleading claims. Neither product has evidence from an approved source that it reduces hair fall.
 
 | | Brand E Herbal | Brand F Coconut |
 |---|---|---|
-| **Wellbeing Index** | 82 / 100 🟢 **(Provisional)** | 100 / 100 🟢 |
-| **Quality ROI** | 91.1 | 238.1 |
+| **Wellbeing Index** | 85 / 100 🟢 **(Provisional)** | 100 / 100 🟢 |
+| **Quality ROI** | 94.4 | 238.1 |
 | **Does the job?** | Oiling: yes · Hair fall: unclear | Oiling: yes |
 | **Biggest concern** | "Chemical-free" claim; unreadable ingredients | None found |
 
@@ -258,24 +260,25 @@
 
 | Sub-score | Weight | Brand E | Brand F |
 |---|---|---|---|
-| Ingredient Safety | 45% | 90 | 100 |
+| Ingredient Safety | 35% | 90 | 100 |
 | Processing Level | 15% | 75 (P2) | 100 (P1) |
-| Additives | 20% | 85 *(provisional)* | 100 |
-| Nutrition Balance | N/A | N/A | N/A |
-| Claim Integrity | 20% | 65 | 100 |
-| **Wellbeing Index** | | **82 (Provisional)** (81.75) | **100** |
+| Additives | 15% | 85 *(provisional)* | 100 |
+| Nutrition Balance (skin and hair) | 20% | 100 | 100 |
+| Claim Integrity | 15% | 65 | 100 |
+| **Wellbeing Index** | | **85 (Provisional)** (85.25) | **100** |
 
 - **E Ingredient Safety:** sesame −5, paraffin −5 (Low ×1.25, top five) = **90**
 - **E Additives:** 1 readable additive −3; parfum −12 = **85**. The unreadable lines may hold more additives, so the score could fall
+- **E and F Nutrition Balance:** leave-on oils whose first ingredient is a nourishing oil (+5, capped at **100**); no harsh surfactants or drying alcohols
 - A score of 100 means **no deductions were found by this method**. It doesn't mean "perfect" or "medically proven"
 
 | | Brand E | Brand F |
 |---|---|---|
 | Price per 100 mL | ₹90.00 | ₹42.00 |
-| **Quality ROI** | **91.1** | **238.1** |
+| **Quality ROI** | **94.4** | **238.1** |
 
 ## 5. Verdict
-**Better choice:** Brand F (**clear winner**, an 18-point gap, and more than twice the value per rupee).
+**Better choice:** Brand F (**clear winner**, a 15-point gap, and more than twice the value per rupee).
 **Trade-offs**
 - Brand E adds herbal extracts that some people prefer, but its hair-fall claim is unproven in approved sources and "chemical-free" is misleading.
 - **Ask for a clearer photo** of Brand E's back label to finish the score.

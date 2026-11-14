@@ -73,11 +73,11 @@ New label terms found: <term → added to 03-key-terms-registry.md / "none">
 
 | Sub-score | Weight | Product A | Product B |
 |---|---|---|---|
-| Ingredient Safety | 35% / 45% | NN | NN |
+| Ingredient Safety | 35% | NN | NN |
 | Processing Level | 15% | NN (P_) | NN (P_) |
-| Additives | 15% / 20% | NN | NN |
-| Nutrition Balance | 20% / N/A | NN or N/A | NN or N/A |
-| Claim Integrity | 15% / 20% | NN | NN |
+| Additives | 15% | NN | NN |
+| Nutrition Balance (dietary / skin and hair) | 20% | NN | NN |
+| Claim Integrity | 15% | NN | NN |
 | **Wellbeing Index** | | **NN** | **NN** |
 | Caps applied | | <none / reason> | <none / reason> |
 | Provisional? | | Yes / No | Yes / No |
