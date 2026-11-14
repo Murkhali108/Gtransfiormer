@@ -55,7 +55,8 @@
 - **Allergens:** none of the major allergens in the confirmed list
 
 ### Sri Sri Tattva Protein Shampoo, for normal to dry hair (200 mL)
-- **Sold in the US by:** Sri Sri Tattva USA (srisritattvausa.com) and Amazon.com
+- **Sold in the US by:** Sri Sri Tattva USA and Amazon.com
+- **Designated product page (provided by the project owner):** [Sri Sri Tattva USA: Protein Shampoo](https://srisritattvausa.com/products/protein-shampoo?_pos=1&_psq=protein+sham&_psid=ff0d59a8f&_ss=e)
 - **Net quantity / price:** 200 mL. **Price (USD): not supplied.**
 - **Claims:**
   - "Plant-based proteins and minerals from chickpeas, green gram, and fenugreek"; "Paraben-free"; "Vegan" [srisritattvausa.com]
@@ -141,7 +142,7 @@ The gap would normally make it a "Clear winner", but the higher-scoring product 
 - 🤰 **Pregnancy:** No authoritative data found from US regulators on rinse-off pyrithione zinc in pregnancy. The EU classification is a hazard classification†.
 
 ### What would complete these scores
-1. A **photo of the back label** of Sri Sri Tattva Protein Shampoo (US pack), showing the full ingredient list.
+1. The **full ingredient list** for Sri Sri Tattva Protein Shampoo, from the [designated product page](https://srisritattvausa.com/products/protein-shampoo?_pos=1&_psq=protein+sham&_psid=ff0d59a8f&_ss=e) (if it lists one) or a **photo of the US pack's back label**.
 2. The **Head & Shoulders variant you would actually buy**: a front and back photo.
 3. **US prices (USD) and pack sizes** for both, from a US sale website or the shelf, to work out Quality ROI.
 
@@ -154,7 +155,7 @@ The gap would normally make it a "Clear winner", but the higher-scoring product 
 | 1 | DailyMed (NLM/NIH): *Head and Shoulders Classic Clean, pyrithione zinc shampoo*, set ID f28a55cf-eb42-4a0d-a4a3-2bae72b58ac8. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f28a55cf-eb42-4a0d-a4a3-2bae72b58ac8 | Active ingredient, NDC, partial inactive list | 2026-11-14 (via search) |
 | 2 | Head & Shoulders US product page: https://www.headandshoulders.com/en-us/products/classic-clean-shampoo | Inactive list order, "Paraben Free", "24/7" claims | 2026-11-14 (via search) |
 | 3 | H-E-B listing: https://www.heb.com/product-detail/head-shoulders-classic-clean-dandruff-shampoo/10662535 | "Pyrithione Zinc (1 %)" | 2026-11-14 (via search) |
-| 4 | Sri Sri Tattva USA (US store): https://srisritattvausa.com/products/protein-shampoo | Key ingredients, "paraben-free", "vegan", fenugreek hair-loss claim | 2026-11-14 (via search) |
+| 4 | Sri Sri Tattva USA, **designated product page** (provided by the project owner): https://srisritattvausa.com/products/protein-shampoo?_pos=1&_psq=protein+sham&_psid=ff0d59a8f&_ss=e | Key ingredients, "paraben-free", "vegan", fenugreek hair-loss claim | 2026-11-14 (via search) |
 | 5 | Amazon.com: https://www.amazon.com/dp/B07GJZQ4HC | "Natural Ayurvedic", "Sulfate-Free Formula", "Healthy, Shiny and Strong Locks" | 2026-11-14 (via search) |
 | 6 | FDA: *Is it a cosmetic, a drug, or both?* https://www.fda.gov/cosmetics/cosmetics-laws-regulations/it-cosmetic-drug-or-both-or-it-soap | Hair-loss claims are drug claims | — |
 | 7 | FDA, 21 CFR 358.710 (anti-dandruff actives): https://www.ecfr.gov/current/title-21/section-358.710 | Pyrithione zinc 1–2% rinse-off | — |

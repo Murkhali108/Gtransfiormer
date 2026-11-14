@@ -136,8 +136,15 @@ These websites are used **only to identify a product and read its label**: name,
 | A brand's non-US website | srisritattva.com (India), headandshoulders.ca |
 | Non-US retailers and pharmacies | bigbasket.com, 1mg.com, apollopharmacy.in, flipkart.com, nykaa.com, amazon.in |
 
+### Designated product pages
+Pages named by the project owner. These are the **primary web label** for that product and take precedence over other US listings (rule 4 below).
+
+| Product | Designated page | Added |
+|---|---|---|
+| Sri Sri Tattva Protein Shampoo (200 mL) | https://srisritattvausa.com/products/protein-shampoo?_pos=1&_psq=protein+sham&_psid=ff0d59a8f&_ss=e | 2026-11-14 |
+
 **Rules**
 1. If the only page for a product is on a non-US site, **don't use it**. Say: *"This product isn't listed on a US sale website."*
 2. Prices are taken in **USD** from the US listing, with the date.
 3. Official label registries are **not** sale websites and stay allowed: DailyMed (NIH) for OTC drug labels, and the NIH Dietary Supplement Label Database.
-4. If two US listings disagree, prefer the brand's US site, then the listing with a back-label image. Note the difference.
+4. If two US listings disagree, prefer the designated product page, then the brand's US site, then the listing with a back-label image. Note the difference.

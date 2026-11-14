@@ -19,7 +19,8 @@ Head & Shoulders versus a protein shampoo. How do we compare the two products?
   - Hybrid
 - **Guardrails:**
   - Demo product universe: Whole Foods, Sri Sri Tattva.
-  - 🇺🇸 **US sale websites only.** When looking up a product online (label, ingredients, claims, price, web link or barcode), use **only websites that sell the product in the United States**: for example the brand's US site, Whole Foods Market, Amazon.com, Walmart.com, Target, CVS or Walgreens. Do not use websites that sell outside the US (for example Indian retailers or a brand's India site). If no US sale website carries the product or its label details, say so. Product pages identify the product and its label only; risk ratings still come only from the approved sources.
+  - 🇺🇸 **US sale websites only.** When looking up a product online (label, ingredients, claims, price, web link or barcode), use **only websites that sell the product in the United States**: for example the brand's US site, Whole Foods Market, Amazon.com, Walmart.com, Target, CVS or Walgreens. Do not use websites that sell outside the US (for example Indian retailers or a brand's India site). If no US sale website carries the product or its label details, say so.
+  - **Designated product page:** Sri Sri Tattva Protein Shampoo → https://srisritattvausa.com/products/protein-shampoo?_pos=1&_psq=protein+sham&_psid=ff0d59a8f&_ss=e Product pages identify the product and its label only; risk ratings still come only from the approved sources.
 
 ## What to produce for each comparison
 1. **Product snapshot:** name, claims made, and the full ingredient list.
@@ -59,3 +60,4 @@ Keep each file to one topic so that search within the project finds the right on
 | Date | Change |
 |---|---|
 | 2026-11-14 | Added guardrail: US sale websites only for online product lookups |
+| 2026-11-14 | Designated the Sri Sri Tattva USA product page for Protein Shampoo |
