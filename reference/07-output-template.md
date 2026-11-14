@@ -20,12 +20,16 @@
 **Date:** YYYY-MM-DD · **Market:** US / India · **Category:** Personal care / Supplement
 **Input:** Photos / Web link or barcode / Hybrid · **Confidence:** High / Medium / Low
 
+<!-- Include this warning (one line per affected product) whenever a full ingredient list was not available. Delete it otherwise. -->
+> ⚠️ **Full ingredient list not available for <Product>.** This score is based on <N> known ingredients (<source>). Ingredients we could not see may raise or lower it. To complete it: <e.g. a photo of the back label>.
+
 ## ⚡ Quick answer
-<One or two sentences: which one to pick and the single main reason. Mention any fit-for-purpose caveat.>
+<One or two sentences: which one to pick and the single main reason. Mention any fit-for-purpose caveat. If a product has the warning above, say "pending the full label".>
 
 | | Product A | Product B |
 |---|---|---|
-| **Wellbeing Index** | NN / 100 (🟢/🟡/🟠/🔴) | NN / 100 (🟢/🟡/🟠/🔴) |
+| **Wellbeing Index** | NN / 100 (🟢/🟡/🟠/🔴) <⚠️ Provisional: incomplete ingredient list> | NN / 100 (🟢/🟡/🟠/🔴) |
+| **Data coverage** | Full list / <N> known ingredients (<source>) | Full list / … |
 | **Quality ROI** | NN.N | NN.N |
 | **Does the job it's bought for?** | Yes / No / Unclear | Yes / No / Unclear |
 | **Biggest concern** | <ingredient or claim> | <ingredient or claim> |
@@ -38,7 +42,7 @@
 - **Net quantity / price:** <qty> · <price, currency> (price per 100 mL or g: <x>)
 - **Claims made:** "<claim 1>", "<claim 2>", …
 - **Active ingredient(s):** <name, strength> or "None declared"
-- **Full ingredient list (label order):** <1. …, 2. …, …>
+- **Full ingredient list (label order):** <1. …, 2. …, …> or <known ingredients> + `[NOT AVAILABLE: …]`
 - **Panel (supplements):** serving <x>; <key nutrients with %DV>
 - **Allergens:** <list or "None of the major allergens found">
 - **Identifiers:** <FSSAI / licence / NDC / certifier / lot / expiry>
@@ -81,6 +85,7 @@ New label terms found: <term → added to 03-key-terms-registry.md / "none">
 | **Wellbeing Index** | | **NN** | **NN** |
 | Caps applied | | <none / reason> | <none / reason> |
 | Provisional? | | Yes / No | Yes / No |
+| Full ingredient list available? | | Yes / ⚠️ No: <N> known | Yes / ⚠️ No: <N> known |
 
 **Quality ROI** = WI ÷ (price per 100 mL or g) × 100
 
@@ -95,7 +100,7 @@ New label terms found: <term → added to 03-key-terms-registry.md / "none">
 
 ## 5. Verdict
 
-**Better choice for the household:** <Product> (<Clear winner / Leans toward / Comparable>, gap NN points)
+**Better choice for the household:** <Product> (<Clear winner / Leans toward / Comparable>, gap NN points) <, pending the full label (if the winner's list is incomplete; drop the wording one level per `01` §4)>
 
 **Trade-offs**
 - <e.g. "B scores higher but has no anti-dandruff active. If dandruff is the reason for buying, A does that job.">
@@ -131,6 +136,7 @@ New label terms found: <term → added to 03-key-terms-registry.md / "none">
 - [ ] Every ingredient of concern has a tier **and** a named authority
 - [ ] Every claim has a status
 - [ ] Unreadable text is marked, not guessed
+- [ ] Every product is scored; any product without a full ingredient list carries the ⚠️ warning, a data-coverage note, and "pending the full label" in the verdict
 - [ ] Sub-score arithmetic adds up; caps checked
 - [ ] Quality ROI uses the same currency and unit for both products
 - [ ] The fit-for-purpose check is stated

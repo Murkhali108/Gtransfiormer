@@ -105,7 +105,7 @@ This sub-score asks whether the formula **balances cleansing with nourishment**,
 | **No** nourishing ingredient anywhere on the list | −20 |
 | Leave-on product (oil, lotion, cream) whose first ingredient is a nourishing oil, butter or humectant | +5 (cap 100) |
 
-If a section of the ingredient list can't be read, score from the readable part and mark the result **Provisional**.
+If a section of the ingredient list can't be read or isn't published, score from the known part and add the incomplete-list warning (section 4, "Missing data").
 
 ### 3.5 Claim Integrity
 Every front and back claim is checked against `03-key-terms-registry.md` and the registries in `05-regulatory-registries.md`.
@@ -145,11 +145,27 @@ The same weights apply to **both** supplements and personal care, so every produ
 | Contains an ingredient prohibited for this product type in the market of sale | 30 |
 | Product or firm on an active FDA import alert (Red List) for a safety reason | 30 |
 
-### Missing data
-- If the label can't be read, **say so; never guess.** Mark the affected sub-score *"Insufficient data"*.
-- Compute the WI from the remaining sub-scores with their weights rescaled to 100%, and label the result **Provisional**.
-- **No full ingredient list, no score.** If the full ingredient list can't be obtained (only "key ingredients" are published, or the back label is missing), Ingredient Safety, Additives, Processing Level and Nutrition Balance are all *Insufficient data*. **Do not publish a WI.** Report *"Not scored: full ingredient list needed"*, show the claim checks that are possible, and say what is needed to finish. Scoring only the advertised ingredients would make the product look cleaner than the evidence allows.
-- **Confidence:** High = full label read and all ingredients covered by sources. Medium = 1–3 ingredients with no authoritative data, or a minor unreadable section. Low = a sub-score missing or >3 ingredients uncovered.
+### Missing data: always rate, always warn
+
+Every product gets a Wellbeing Index, even when data is missing. When data is missing, the score comes with a clear warning.
+
+1. **Never guess.** If part of the label can't be read or isn't published, say so (`[UNREADABLE: …]` / `[NOT AVAILABLE: …]`). Never fill the gap from memory or from a "typical" formula.
+2. **Score from what is known.** Apply sections 3.1–3.5 to the ingredients and claims that *are* known:
+   - **Ingredient Safety, Additives, Nutrition Balance:** deduct only for known ingredients.
+   - **Processing Level:** if the level can't be judged from the known ingredients, use **P3 (50)**, the typical level for shampoos, soaps and protein powders, and note *"default level: formula not known"*.
+   - **Nutrition Balance (supplements):** if the nutrition or supplement panel is missing, mark it *Insufficient data* and rescale the other weights to 100%. This is the only case where a sub-score is left out.
+3. **Add the incomplete-list warning** to the score wherever it appears (quick answer, score table, verdict):
+
+   > ⚠️ **Full ingredient list not available.** This score is based on <N> known ingredients (<source, e.g. "key ingredients from the brand website">). Ingredients we could not see may raise or lower it.
+
+   Label the WI **Provisional** and show **data coverage**, e.g. *"3 known ingredients (key ingredients only)"* or *"13 of an estimated 18+ ingredients"*.
+4. **The warning affects the verdict wording.** If the higher-scoring product has an incomplete list, drop the verdict one level ("Clear winner" → "Leans toward"; "Leans toward" → "Comparable") and add *"pending the full label"*.
+5. **Say what would complete the score**, e.g. a photo of the back label.
+
+**Confidence:**
+- **High:** full label read, and all ingredients covered by sources.
+- **Medium:** 1–3 ingredients with no authoritative data, or a minor unreadable section.
+- **Low:** the full ingredient list is not available, a sub-score was left out, or more than 3 ingredients are not covered by sources.
 
 ---
 

@@ -3,39 +3,43 @@
 **Topic:** Worked examples that set the standard for finished reports.
 **Last reviewed:** 2026-11-14
 
-> **Sample 1 uses real products** (the problem statement's use case), built from **public web labels only** (Scenario B in `06`). It shows how the tool handles a label that isn't fully published: it **does not guess**.
+> **Sample 1 uses real products** (the problem statement's use case), built from **public web labels only** (Scenario B in `06`). It shows how the tool handles a label that isn't fully published: it **never guesses** the missing ingredients, **still scores** the product from what is known, and shows the ⚠️ incomplete-list warning.
 > **Samples 2 and 3 use made-up products** (Brands C–F) to show the full method; their registry results are illustrative.
 > Ratings marked † assume the proposed EU source in `02` §5 is approved.
 
 | # | Products | Market | Shows |
 |---|---|---|---|
-| 1 | **Head & Shoulders Classic Clean vs Sri Sri Tattva Protein Shampoo** (real) | US label / India | A real web-label evaluation; a product that is **not scored** because its full ingredient list isn't public; a fit-for-purpose check |
+| 1 | **Head & Shoulders Classic Clean vs Sri Sri Tattva Protein Shampoo** (real) | US label / India | A real web-label evaluation; scoring with an **incomplete ingredient list** (⚠️ warning, softened verdict); a fit-for-purpose check |
 | 2 | Protein powder: whey vs plant (fictional) | US ($) | A false claim, a missing DSHEA disclaimer, an organic seal verified in the OID |
-| 3 | Hair oil: Ayurvedic blend vs pure coconut (fictional) | India (₹) | A partly unreadable label → Provisional score; a "chemical-free" claim |
+| 3 | Hair oil: Ayurvedic blend vs pure coconut (fictional) | India (₹) | A partly unreadable label → ⚠️ Provisional score; a "chemical-free" claim |
 
 ---
 
 # Sample 1: Head & Shoulders Classic Clean vs Sri Sri Tattva Protein Shampoo
 
 **Date:** 2026-11-14 · **Category:** Personal care · **Input:** Web label / search (no photos) · **Confidence:** Low
-**Status:** ⏳ **Incomplete.** The verdict is held until the missing label data arrives (see "What we still need").
+**Status:** Both products scored; both scores are **Provisional**.
+
+> ⚠️ **Full ingredient list not available for Sri Sri Tattva Protein Shampoo.** This score is based on **3 known ingredients** (the "key ingredients" on the brand website). Ingredients we could not see may raise or lower it. To complete it: a photo of the back label.
+>
+> ⚠️ **Full ingredient list not confirmed for Head & Shoulders Classic Clean.** This score is based on the **active ingredient plus 18 known inactive ingredients** (brand page and DailyMed). The official list could not be opened in full, so a few items, such as preservatives, may be missing.
 
 > **Read this first**
 > - Both evaluations come from **public web labels**. The brand pages could not be opened directly from this session, so the facts below come from search results that quote DailyMed (the official US register of OTC drug labels, run by NIH) and the brands' own pages. Every fact is cited.
 > - **Head & Shoulders formulas differ by country and variant.** The label used here is the **US "Classic Clean" shampoo** (DailyMed set ID `f28a55cf-eb42-4a0d-a4a3-2bae72b58ac8`), the only full official label found. An Indian pack may differ.
 > - This is not a judgement of either brand's safety. It is not medical advice.
 
-## ⚡ Quick answer (so far)
-- **Head & Shoulders Classic Clean:** provisional **68 / 100 🟡**. It contains an FDA-recognised anti-dandruff active, so it does the anti-dandruff job.
-- **Sri Sri Tattva Protein Shampoo:** **Not scored.** Its full ingredient list isn't published online; only three "key ingredients" are. We won't guess the rest.
-- **For dandruff:** only Head & Shoulders has a recognised anti-dandruff active. **For dry hair without dandruff:** we can't say which is better until we see Sri Sri Tattva's full back label.
+## ⚡ Quick answer
+- **For dandruff:** choose **Head & Shoulders**. It is the only one with an FDA-recognised anti-dandruff active (pyrithione zinc 1%).
+- **For dry hair without dandruff:** the evidence **leans toward Sri Sri Tattva** (87 vs 68), *pending the full label*. Its score rests on only 3 known ingredients, so it could drop once the full list is seen.
 
 | | Head & Shoulders Classic Clean | Sri Sri Tattva Protein Shampoo |
 |---|---|---|
-| **Wellbeing Index** | 68 / 100 🟡 **(Provisional)** | **Not scored**: full ingredient list needed |
+| **Wellbeing Index** | 68 / 100 🟡 ⚠️ **Provisional**: list not fully confirmed | 87 / 100 🟢 ⚠️ **Provisional**: incomplete ingredient list |
+| **Data coverage** | Active + 18 known inactive ingredients (brand page, DailyMed) | 3 known ingredients (key ingredients only, brand website) |
 | **Quality ROI** | Needs price | Needs price |
 | **Does the job it's bought for?** | Dandruff: **Yes** (pyrithione zinc 1%) | Dandruff: No active declared · Dry hair: unclear |
-| **Biggest concern** | Zinc pyrithione (banned in EU cosmetics†), fragrance, two harsh surfactants first on the list | Unknown: the full formula isn't published |
+| **Biggest concern** | Zinc pyrithione (banned in EU cosmetics†), fragrance, two harsh surfactants first on the list | Unverified claims; most of the formula is unknown |
 
 ## 1. Product snapshot
 
@@ -71,7 +75,7 @@
 | H&S | Neosetophoma cerealis extract | unconfirmed | No authoritative data found | — | — |
 | H&S | Zinc carbonate, niacinamide, glycerin, dimethicone, guar HPTC, polyquaternium-76 | — | Not flagged | — | — |
 | SST | Green gram, fenugreek, chickpea extract | unknown | Not flagged | Plant extracts; no concern found. Chickpea is a legume, so people with legume allergies may want to check | — |
-| SST | **Everything else** | — | **Cannot rate** | Full list not published | — |
+| SST | **Everything else** | — | Not seen ⚠️ | The full list isn't published, so cleansers, preservatives and fragrance (if any) could not be rated | — |
 
 **Watch-points (not scored):** 1,4-dioxane (H&S, from SLES): no product test or recall found.
 
@@ -86,44 +90,51 @@
 | SST | "Natural ingredients" | Unverifiable (−10) | "Natural" has no legal definition for cosmetics |
 | SST | "Nourishes hair & reduces hair loss" | Unverifiable (−10) | No evidence in approved sources |
 | SST | "Provides strength & shine" | Unverifiable (−10) | No evidence in approved sources |
-| SST | "Complies with AYUSH standards" | Unverifiable | AYUSH is a proposed source† and no licence was seen |
-| SST | "Protein shampoo" | Unverifiable | Protein sources (green gram, chickpea) are named, but their amounts are unknown |
+| SST | "Complies with AYUSH standards" | Not scored | Retailer text, not on the label. AYUSH is a proposed source† and no licence was seen |
+| SST | "Protein shampoo" | Consistent | Protein-rich legumes (green gram, chickpea) are named as key ingredients; amounts unknown |
 
 ## 4. Wellbeing Index
 
 | Sub-score | Weight | Head & Shoulders | Sri Sri Tattva |
 |---|---|---|---|
-| Ingredient Safety | 35% | 70 | Insufficient data |
-| Processing Level | 15% | 50 (P3: ethoxylated SLES) | Insufficient data |
-| Additives | 15% | 59 *(provisional)* | Insufficient data |
-| Nutrition Balance (skin and hair) | 20% | 70 | Insufficient data |
+| Ingredient Safety | 35% | 70 | 100 ⚠️ |
+| Processing Level | 15% | 50 (P3: ethoxylated SLES) | 50 (P3 default: formula not known) |
+| Additives | 15% | 59 ⚠️ | 100 ⚠️ |
+| Nutrition Balance (skin and hair) | 20% | 70 | 100 ⚠️ |
 | Claim Integrity | 15% | 90 | 60 |
-| **Wellbeing Index** | | **68 (Provisional)** (68.35) | **Not scored** |
-| Caps | | None found | — |
+| **Wellbeing Index** | | **68** (68.35) ⚠️ Provisional | **87** (86.5) ⚠️ Provisional |
+| Full ingredient list available? | | ⚠️ Not fully confirmed: active + 18 known | ⚠️ No: 3 known |
+| Caps | | None found | None found |
 
 - **H&S Ingredient Safety:** SLS −5, SLES −5, CAPB −5 (Low ×1.25, top five), pyrithione zinc −15 (Moderate ×1.25, active) = **70**
 - **H&S Additives:** 7 confirmed additives (sodium xylenesulfonate, zinc carbonate, fragrance, sodium chloride, trihydroxystearin, Blue 1, Red 33) −21; fragrance −12; Blue 1 −4; Red 33 −4 = **59**. Provisional, because unconfirmed items could lower it
 - **H&S Nutrition Balance:** SLS (#2) −20, SLES (#3) −10; conditioning agents (dimethicone, guar) come before the first preservative-type ingredient (piroctone olamine) = **70**
 - **H&S Claim Integrity:** "24/7" −10 = **90**
-- **Sri Sri Tattva:** under `01` §4, a product with no full ingredient list gets no Wellbeing Index. Scoring only the three key ingredients would make the product look cleaner than the evidence allows
+- **SST Ingredient Safety:** green gram, fenugreek and chickpea extract are not flagged = **100** ⚠️ (only 3 ingredients known)
+- **SST Processing Level:** can't be judged from 3 plant extracts, so the P3 default applies = **50**
+- **SST Additives:** no additives among the known ingredients = **100** ⚠️. Any preservative, fragrance or thickener on the real label would lower this
+- **SST Nutrition Balance:** no harsh cleanser among the known ingredients; nourishing protein sources present = **100** ⚠️. The real cleanser is unknown, and a sulfate there would cost −20
+- **SST Claim Integrity:** "Ayurvedic", "natural ingredients", "nourishes & reduces hair loss" and "strength & shine" are Unverifiable (−10 each) = **60**
+- **Why the warning matters:** Sri Sri Tattva's 100s reflect *missing information*, not proven cleanliness. Every shampoo needs a cleansing agent and usually a preservative, and neither is shown. If its cleanser were a sulfate and it contained fragrance, its score would fall roughly into the 70s
 
 **Quality ROI:** not calculated. Prices weren't supplied, and the two products would need the same currency.
 
-## 5. Verdict (held)
+## 5. Verdict
 
-**Better choice for the household:** ⏳ **Not decided yet.** One product can't be scored.
+**Better choice for the household:** **Leans toward Sri Sri Tattva Protein Shampoo** (gap 19 points), *pending the full label*.
+The gap would normally make it a "Clear winner", but the higher-scoring product has an incomplete ingredient list, so the wording drops one level (`01` §4, Missing data).
 
-**What we can already say**
-- **If someone has dandruff:** Head & Shoulders contains an FDA-recognised anti-dandruff active (pyrithione zinc 1%). Sri Sri Tattva doesn't declare one.
-- **Head & Shoulders trade-offs:** it starts with two strong cleansers (SLS, SLES), and it contains fragrance and an active that the EU no longer allows in cosmetics†. Rinse it off well.
-- **Sri Sri Tattva:** its herbal "protein" ingredients raise no concern, but its claims are unverified and the rest of its formula is unknown.
+**Trade-offs**
+- **If someone has dandruff:** choose **Head & Shoulders**. It contains an FDA-recognised anti-dandruff active (pyrithione zinc 1%); Sri Sri Tattva declares none.
+- **Head & Shoulders:** it starts with two strong cleansers (SLS, SLES), and it contains fragrance and an active that the EU no longer allows in cosmetics†. Rinse it off well.
+- **Sri Sri Tattva:** its herbal "protein" ingredients raise no concern, but its claims are unverified and most of its formula is unseen. ⚠️ Its score may fall once the full label is checked.
 
 **Who should be careful**
 - 🤧 **Allergies / sensitive skin:** Head & Shoulders has fragrance and cocamidopropyl betaine. Sri Sri Tattva is unknown; chickpea and green gram are legumes.
 - 👶 **Children:** keep both out of the eyes. No child-specific concern found in approved sources.
 - 🤰 **Pregnancy:** No authoritative data found from US or Indian regulators on rinse-off pyrithione zinc in pregnancy. The EU classification is a hazard classification†.
 
-### What we still need to finish this comparison
+### What would complete these scores
 1. A **photo of the back label** of Sri Sri Tattva Protein Shampoo: the full ingredient list and the AYUSH or drug licence number.
 2. The **Head & Shoulders variant and pack you would actually buy** (Indian packs differ from the US label used here): a front and back photo.
 3. **Prices and pack sizes** for both, in the same currency, to work out Quality ROI.
@@ -239,14 +250,17 @@ Retailer pages (3, 5, 6) are used **only to identify the product and its label t
 
 # Sample 3: Brand E Herbal Hair Oil vs Brand F Pure Coconut Oil
 
-**Date:** 2026-11-14 · **Market:** India · **Category:** Personal care · **Input:** Photos · **Confidence:** Medium (part of Brand E's label is unreadable)
+**Date:** 2026-11-14 · **Market:** India · **Category:** Personal care · **Input:** Photos · **Confidence:** Low (part of Brand E's label is unreadable)
+
+> ⚠️ **Full ingredient list not available for Brand E Herbal Hair Oil.** This score is based on **6 known ingredients** (read from the photo). About 2 lines after "Parfum" are hidden by glare. Ingredients we could not see may raise or lower the score. To complete it: a clearer photo of the back label.
 
 ## ⚡ Quick answer
 **Brand F** is the clear winner (100 vs 85, provisional): one ingredient and no misleading claims. Neither product has evidence from an approved source that it reduces hair fall.
 
 | | Brand E Herbal | Brand F Coconut |
 |---|---|---|
-| **Wellbeing Index** | 85 / 100 🟢 **(Provisional)** | 100 / 100 🟢 |
+| **Wellbeing Index** | 85 / 100 🟢 ⚠️ **Provisional**: incomplete ingredient list | 100 / 100 🟢 |
+| **Data coverage** | 6 known ingredients (about 2 lines unreadable) | Full list (1 ingredient) |
 | **Quality ROI** | 94.4 | 238.1 |
 | **Does the job?** | Oiling: yes · Hair fall: unclear | Oiling: yes |
 | **Biggest concern** | "Chemical-free" claim; unreadable ingredients | None found |
@@ -295,7 +309,8 @@ Retailer pages (3, 5, 6) are used **only to identify the product and its label t
 | Additives | 15% | 85 *(provisional)* | 100 |
 | Nutrition Balance (skin and hair) | 20% | 100 | 100 |
 | Claim Integrity | 15% | 65 | 100 |
-| **Wellbeing Index** | | **85 (Provisional)** (85.25) | **100** |
+| **Wellbeing Index** | | **85** (85.25) ⚠️ Provisional | **100** |
+| Full ingredient list available? | | ⚠️ No: 6 known | Yes |
 
 - **E Ingredient Safety:** sesame −5, paraffin −5 (Low ×1.25, top five) = **90**
 - **E Additives:** 1 readable additive −3; parfum −12 = **85**. The unreadable lines may hold more additives, so the score could fall
@@ -308,7 +323,7 @@ Retailer pages (3, 5, 6) are used **only to identify the product and its label t
 | **Quality ROI** | **94.4** | **238.1** |
 
 ## 5. Verdict
-**Better choice:** Brand F (**clear winner**, a 15-point gap, and more than twice the value per rupee).
+**Better choice:** Brand F (**clear winner**, a 15-point gap, and more than twice the value per rupee). The winner has a complete list, so the verdict wording is not softened.
 **Trade-offs**
 - Brand E adds herbal extracts that some people prefer, but its hair-fall claim is unproven in approved sources and "chemical-free" is misleading.
 - **Ask for a clearer photo** of Brand E's back label to finish the score.

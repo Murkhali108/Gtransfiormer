@@ -3,7 +3,10 @@
 **Topic:** How to read product photos (front and back), ingredient order, serving sizes and nutrition or supplement panels, and what to do when a label can't be read.
 **Last reviewed:** 2026-11-14
 
-> **Golden rule:** if a label can't be read, **say so; never guess.** Write `[UNREADABLE: <what and where>]`.
+> **Golden rule:** if a label can't be read, **say so; never guess.** Write `[UNREADABLE: <what and where>]`, or `[NOT AVAILABLE: <what>]` when a web source doesn't publish it.
+> The product **is still scored** from what is known, with the ⚠️ "Full ingredient list not available" warning (`01` §4, Missing data).
+>
+> **Common case:** brand and retailer websites often publish only "key ingredients" (e.g. three herbs), not the full list. Record them as known ingredients, mark the rest `[NOT AVAILABLE: full ingredient list not published online]`, and ask for a back-label photo to complete the score.
 
 ---
 
