@@ -34,6 +34,7 @@
 | **Quality ROI** | NN.N | NN.N |
 | **Does the job it's bought for?** | Yes / No / Unclear | Yes / No / Unclear |
 | **Biggest concern** | <ingredient or claim> | <ingredient or claim> |
+| **Gives to non-profit work** | <X>% of profit / not disclosed / ⚠️ not yet researched | … |
 
 ---
 
@@ -46,7 +47,9 @@
 - **Full ingredient list (label order):** <1. …, 2. …, …> or <known ingredients> + `[NOT AVAILABLE: …]`
 - **Panel (supplements):** serving <x>; <key nutrients with %DV>
 - **Allergens:** <list or "None of the major allergens found">
-- **Identifiers:** <FSSAI / licence / NDC / certifier / lot / expiry>
+- **Identifiers:** <NDC / certifier / lot / expiry>
+- **Packaging:** <material, resin code, refill format>
+- **Owning company and giving:** <company> · <X>% of FY<YYYY> net profit to non-profit work (<source>, Verified / Self-reported) or "not yet researched"
 - **Unreadable parts:** <list or "None">
 - **Ingredient pull check:** <PASS / PARTIAL / FAIL> · source <url> · checks failed <list> · next step <re-pull / photo / none>
 
@@ -77,13 +80,13 @@ New label terms found: <term → added to 03-key-terms-registry.md / "none">
 
 ## 4. Wellbeing Index
 
-| Sub-score | Weight | Product A | Product B |
+| Category | Weight | Product A | Product B |
 |---|---|---|---|
-| Ingredient Safety | 35% | NN | NN |
-| Processing Level | 15% | NN (P_) | NN (P_) |
-| Additives | 15% | NN | NN |
-| Nutrition Balance (dietary / skin and hair) | 20% | NN | NN |
-| Claim Integrity | 15% | NN | NN |
+| Side Effects / Health Risks (avg of Ingredient Risk NN, Additive Risk NN) | 20% | NN | NN |
+| Nutrition Value (dietary / skin and hair) | 20% | NN | NN |
+| Conscious Branding (<X>% of FY<YYYY> profit to non-profit work; Verified / Self-reported / ⚠️ not yet researched) | 20% | NN or ⚠️ left out | NN or ⚠️ left out |
+| Claims Integrity | 20% | NN | NN |
+| Sustainability (packaging <material, resin>; persistent ingredients) | 20% | NN | NN |
 | **Wellbeing Index** | | **NN** | **NN** |
 | Caps applied | | <none / reason> | <none / reason> |
 | Provisional? | | Yes / No | Yes / No |
@@ -96,7 +99,7 @@ New label terms found: <term → added to 03-key-terms-registry.md / "none">
 | Price per 100 | <x> | <x> |
 | Quality ROI | NN.N | NN.N |
 
-<Show the deductions behind each sub-score in one line each, e.g. "A Additives: 11 additives (−33), fragrance (−12), MCI/MI (−12), Blue 1 (−4) = 39".>
+<Show the deductions behind each category in one line each, e.g. "A Side Effects: Ingredient Risk 70 (SLS −5, SLES −5, CAPB −5, ZPT −15), Additive Risk 59 → 64.5". If a category is left out, say the others are weighted 25% each.>
 
 ---
 

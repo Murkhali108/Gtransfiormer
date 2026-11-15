@@ -27,7 +27,14 @@ Head & Shoulders versus a protein shampoo. How do we compare the two products?
 1. **Product snapshot:** name, claims made, and the full ingredient list.
 2. **Ingredient risk check:** mark each ingredient of concern as Low, Moderate or High risk, and name the authority behind each rating.
 3. **Claim verification:** check claims like "organic" against the key-terms registry. Flag claims that can't be verified or that mislead.
-4. **Wellbeing Index (0–100) for each product:** show the sub-scores (ingredient safety, processing level, additives, nutrition balance and claim integrity). Add a "Quality ROI = Wellbeing Index / price / qty × 100".
+4. **Wellbeing Index (0–100) for each product:** show the five category scores, **20% each** (set by VC feedback, 2026-11-15):
+   - **Side Effects / Health Risks**
+   - **Nutrition Value** (based on ingredients)
+   - **Conscious Branding**: the percentage of profits the brand's company gives to non-profit work
+   - **Claims Integrity**
+   - **Sustainability**
+
+   Add a "Quality ROI = Wellbeing Index / price / qty × 100".
 5. **Verdict:** which product is the better choice for the household, the trade-offs, and who should be careful (children, pregnancy, allergies).
 
 ## Allowed sources (strict)
@@ -44,12 +51,12 @@ Keep a running glossary of label terms (organic, natural, non-GMO, clean label a
 Plain language that a couple can act on in the store. Inform without alarming. This tool doesn't give medical advice.
 
 ## Process flow
-See [PROCESS_FLOW.md](PROCESS_FLOW.md): 8 steps from raw input to report, each with its input, output and topic file.
+See [PROCESS_FLOW.md](PROCESS_FLOW.md): 9 steps from raw input to report, each with its input, output and topic file.
 
 ## Topic files
 | # | File | Topic |
 |---|---|---|
-| 1 | `reference/01-scoring-methodology.md` | Wellbeing Index weights, risk tiers and the scoring rules |
+| 1 | `reference/01-scoring-methodology.md` | Wellbeing Index: five categories at 20% each, risk tiers and the scoring rules |
 | 2 | `reference/02-approved-sources.md` | The allowed sources and URLs, plus which source wins when they conflict |
 | 3 | `reference/03-key-terms-registry.md` | The label-term glossary (term, legal definition, certifier, red flags) |
 | 4 | `reference/04-additives-and-ingredients-of-concern.md` | Flagged additives, their regulatory status and limits |
@@ -67,3 +74,4 @@ Keep each file to one topic so that search within the project finds the right on
 | 2026-11-14 | Designated the Sri Sri Tattva USA product page for Protein Shampoo |
 | 2026-11-14 | Added the ingredient pull check step |
 | 2026-11-15 | Added the process flow (PROCESS_FLOW.md) |
+| 2026-11-15 | VC feedback: Wellbeing Index rebuilt on five categories at 20% each: Side Effects / Health Risks, Nutrition Value, Conscious Branding (% of profits to non-profit work), Claims Integrity, Sustainability |

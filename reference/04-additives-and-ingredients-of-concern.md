@@ -57,7 +57,7 @@
 | **Hydrolysed wheat protein** | Allergen caution for people with wheat allergy (not a toxicity rating) | FDA (allergens in cosmetics) |
 | **Sesame oil** (topical) | Allergen caution; sesame is a US major food allergen (FASTER Act 2021) | FDA |
 
-### 1.4 Environmental flags (reported in Claim Integrity and the verdict)
+### 1.4 Environmental flags (scored in Sustainability, `01` §3.5)
 
 | Item | Status | Authority |
 |---|---|---|

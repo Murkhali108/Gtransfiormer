@@ -206,7 +206,7 @@ Paste this into every report (`07-output-template.md`, section 6).
 | API | Use | Example call |
 |---|---|---|
 | **PubChem PUG REST** | Match an INCI or label name to a chemical identity and synonyms, to look it up in `04` | `GET https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/sodium%20laureth%20sulfate/synonyms/JSON` |
-| **ODS fact sheets API** | Upper Limits and safety notes for Nutrition Balance | `https://ods.od.nih.gov/api/` |
+| **ODS fact sheets API** | Upper Limits and safety notes for Nutrition Value | `https://ods.od.nih.gov/api/` |
 | **RxNorm (RxNav)** | Standardise the names of OTC active ingredients | `GET https://rxnav.nlm.nih.gov/REST/drugs.json?name=pyrithione%20zinc` |
 
 ### 10.5 Related FDA API
@@ -230,3 +230,23 @@ pull_check:
   pulled_at: YYYY-MM-DD
   checks_failed: []
 ```
+
+---
+
+## 11. Conscious Branding lookups (giving as a % of profit)
+
+Sources and rules: `02-approved-sources.md` §8. Scoring: `01` §3.3.
+
+1. **Find the owning company** from the label ("Manufactured / Distributed by"), e.g. Head & Shoulders → The Procter & Gamble Company.
+2. **Net profit:** SEC EDGAR 10-K (US public), MCA21 financial statements (India), or the audited annual report.
+3. **Giving:** in this order:
+   - US: the company foundation's Form 990-PF (IRS search), then the giving total in the 10-K or citizenship report.
+   - India: the National CSR Portal (CSR spend), plus any foundation transfers in the annual report.
+4. **Compute:** giving ÷ net profit × 100, for the same financial year.
+5. **Record:**
+
+| Company | FY | Giving | Net profit | % | Source | Level |
+|---|---|---|---|---|---|---|
+| <name> | <YYYY> | <amount> | <amount> | <x>% | <URL> | Verified / Self-reported |
+
+If the search isn't finished, mark it **Not yet researched**; the category is then left out of the score with the ⚠️ warning (`01` §3.3).

@@ -150,3 +150,25 @@ Pages named by the project owner. These are the **primary web label** for that p
 2. Prices are taken in **USD** from the US listing, with the date.
 3. Official label registries are **not** sale websites and stay allowed: DailyMed (NIH) for OTC drug labels, and the NIH Dietary Supplement Label Database. **Use their APIs first** (`05` §10); go to sale websites only for products they don't cover, such as cosmetics.
 4. If two US listings disagree, prefer the designated product page, then the brand's US site, then the listing with a back-label image. Note the difference.
+
+---
+
+## 8. Sources for Conscious Branding (percentage of profits to non-profit work)
+
+> Added for the VC's **Conscious Branding** category (`01` §3.3). These sources give **financial facts** (giving and profit), not risk ratings. Company filings may come from the company's home country; the US-only rule (§7) applies to *sale* websites.
+
+| Level | Source | What it gives | URL |
+|---|---|---|---|
+| **Verified** | **SEC EDGAR** (US public companies): Form 10-K, annual report, proxy | Net profit; sometimes charitable contributions | https://www.sec.gov/edgar/search/ |
+| **Verified** | **IRS Tax Exempt Organization Search**: Form 990 / 990-PF of the company's foundation | Grants paid to non-profits | https://apps.irs.gov/app/eos/ |
+| **Verified** | **India: National CSR Portal** (Ministry of Corporate Affairs): CSR spend under Companies Act 2013 §135 | CSR amount spent, by company and year | https://www.csr.gov.in |
+| **Verified** | **India: MCA21** (Ministry of Corporate Affairs): filed financial statements | Net profit of Indian companies | https://www.mca.gov.in |
+| **Verified** | Audited annual report of the owning company | Profit and giving, when both are disclosed | Company investor site |
+| **Self-reported** | The company's own impact, citizenship or CSR report, or its website | Giving claims and amounts | Company site |
+| ❌ Not allowed | Press releases without figures, news-only reports, retailer pages, ratings sites | — | — |
+
+**Rules**
+1. Giving and profit must be from the **same financial year** and the **same company** (the brand owner).
+2. Verified beats self-reported. If they disagree, use the verified figure and note the difference.
+3. Journalism (Tier 3) can point to a filing but is never the figure itself.
+4. Record: company, year, giving amount, net profit, %, source, and Verified / Self-reported.

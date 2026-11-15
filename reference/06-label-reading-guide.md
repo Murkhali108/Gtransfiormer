@@ -14,7 +14,7 @@
 
 | Scenario | What the user gives | What we do |
 |---|---|---|
-| **A. Photos** | Front and back photos of both products | Extract all 10 fields below from the images |
+| **A. Photos** | Front and back photos of both products | Extract all 12 fields below from the images |
 | **B. Typed details** | A web link or barcode for each product | Identify the product, then pull its label in this order: **1) an official label API** (DailyMed for OTC drugs, the NIH Dietary Supplement Label Database for supplements; `05` §10), **2) the designated product page or another US sale website**. Mark the source |
 | **C. Hybrid** | Photos plus links or barcodes | Read the photos first, then fill gaps from the web label (**US sale websites only**). **If they conflict, the photo wins**, and the difference is noted |
 
@@ -32,7 +32,7 @@
 
 ---
 
-## 2. The 10 fields to extract
+## 2. The 12 fields to extract
 
 | # | Field | Where it is | Notes |
 |---|---|---|---|
@@ -46,6 +46,8 @@
 | 8 | **Allergens and warnings** | Back | "Contains:", "May contain", caution statements |
 | 9 | **Regulatory identifiers** | Back or bottom | FSSAI licence (14 digits), AYUSH/drug licence no., NDC (US OTC), certifier name, veg/non-veg mark, organic seals |
 | 10 | **Batch / lot, manufacturing and expiry dates, manufacturer and country** | Bottom, crimp or neck | Lot is needed to check recalls |
+| 11 | **Packaging** | Bottle, tub or pouch; base | Material, resin code (♳ 1 – ♹ 7), refill or concentrate format, recycling claims. Needed for **Sustainability** |
+| 12 | **Owning company** | "Manufactured / Distributed by" line | Needed for **Conscious Branding** (giving as a % of profit; `05` §11) |
 
 Record each field with a **confidence** mark: ✅ read clearly · ⚠️ partly read (state which part) · ❌ unreadable.
 
@@ -62,7 +64,7 @@ Record each field with a **confidence** mark: ✅ read clearly · ⚠️ partly 
 ### Names to recognise
 - **Cosmetics** use **INCI** names: *Aqua* = water, *Parfum* = fragrance, *Butyrospermum Parkii* = shea, *Cocos Nucifera* = coconut, *Sesamum Indicum* = sesame, *CI 42090* = FD&C Blue 1.
 - **Ayurvedic** labels may use Sanskrit names with a botanical name: *Bhringraj* (Eclipta alba), *Amla* (Emblica officinalis), *Brahmi* (Bacopa monnieri), *Tila taila* (sesame oil).
-- "-eth" or "PEG-" means **ethoxylated** (a 1,4-dioxane watch-point; Processing Level P3).
+- "-eth" or "PEG-" means **ethoxylated** (a 1,4-dioxane watch-point; deducted in Sustainability, `01` §3.5).
 - "-paraben", "-isothiazolinone", "DMDM", "quaternium-15", "urea" (imidazolidinyl/diazolidinyl) → check `04`.
 - "Fragrance", "parfum" or "aroma" is **one word that can hide many chemicals**.
 
@@ -81,7 +83,7 @@ Record each field with a **confidence** mark: ✅ read clearly · ⚠️ partly 
 
 ### US Supplement Facts (21 CFR 101.36)
 - Shows the **serving size** (e.g. "1 scoop (33 g)") and the amount and %DV of each dietary ingredient.
-- **Proprietary blend:** only the total blend weight is required, not the amount of each ingredient → deduct under Nutrition Balance (`01` §3.4).
+- **Proprietary blend:** only the total blend weight is required, not the amount of each ingredient → deduct under Nutrition Value (`01` §3.2).
 - `†` means "Daily Value not established".
 - Compare the dose with **NIH ODS Upper Limits** at the **suggested daily use** (e.g. 2 scoops a day = 2 × panel).
 
@@ -167,6 +169,8 @@ ingredients: ["Water", "Sodium Laureth Sulfate", "..."]
 panel: { serving: "33 g", per_serving: { protein_g: 24, added_sugars_g: 2, sodium_mg: 130 } }
 allergens: ["milk", "soy"]
 identifiers: { ndc: "", certifier: "", lot: "", expiry: "" }
+packaging: { material: "plastic", resin_code: "2 | unknown", refill: false }
+owning_company: "The Procter & Gamble Company"
 unreadable: ["ingredients after 'Fragrance' (glare)"]
 source: photo | web | hybrid
 pull_check: { status: PASS | PARTIAL | FAIL, source_url: "", checks_failed: [] }

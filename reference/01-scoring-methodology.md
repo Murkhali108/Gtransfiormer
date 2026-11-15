@@ -1,8 +1,8 @@
 # 01 · Scoring Methodology
 
-**Topic:** How the Wellbeing Index (0–100), its five sub-scores, the risk tiers and the Quality ROI are calculated.
+**Topic:** How the Wellbeing Index (0–100), its five 20% categories (Side Effects / Health Risks, Nutrition Value, Conscious Branding, Claims Integrity, Sustainability), the risk tiers and the Quality ROI are calculated.
 **Applies to:** Personal care (soaps, shampoos, oils) and supplements.
-**Last reviewed:** 2026-11-14
+**Last reviewed:** 2026-11-15
 
 > This tool informs product choice. It does not give medical advice.
 
@@ -10,12 +10,13 @@
 
 ## 1. What "wellbeing" means here
 
-A product scores well when it **does its job (efficacy) without side effects**, judged on two things:
+A product scores well when it **does its job (efficacy) without side effects**, judged on three things:
 
-- **Body impact:** what the ingredients, additives and contaminants do to the person using it.
+- **Body impact:** what the ingredients, additives and contaminants do to the person using it, and what they give it.
 - **Environment impact:** packaging and ingredients that persist or pollute, such as microplastics and plastic-related chemicals.
+- **Brand conduct:** whether the label tells the truth, and how much of the company's profit goes to non-profit work.
 
-Every score is built only from the label and from the approved sources in `02-approved-sources.md`.
+Every score is built only from the label, the approved sources in `02-approved-sources.md`, and (for Conscious Branding) company filings and reports listed in `02` §8.
 
 ---
 
@@ -39,12 +40,25 @@ Rules:
 
 ---
 
-## 3. The five sub-scores
+## 3. The five categories
 
-Each sub-score runs from 0 to 100. All of them start at 100 and lose points by deduction. None can go below 0.
+> **Structure set by VC feedback (2026-11-15):** five categories, **20% each**. This replaces the earlier five sub-scores (Ingredient Safety, Processing Level, Additives, Nutrition Balance, Claim Integrity). Their rules are kept inside the new categories: ingredient and additive risk → **Side Effects / Health Risks**; processing of supplements → **Nutrition Value**; ethoxylated and persistent ingredients → **Sustainability**.
 
-### 3.1 Ingredient Safety
-Covers actives, base ingredients and named contaminants. **Additives are scored in 3.3, never here.** Each flagged ingredient is deducted in exactly one sub-score.
+Each category runs from 0 to 100. None can go below 0 or above 100.
+
+| # | Category | Weight | Measures |
+|---|---|---|---|
+| 1 | **Side Effects / Health Risks** | 20% | Ingredients and additives that can harm the user |
+| 2 | **Nutrition Value (based on ingredients)** | 20% | What the ingredients give the body (supplements) or the skin and hair (personal care) |
+| 3 | **Conscious Branding** | 20% | The **percentage of profits** the brand's company gives to non-profit work |
+| 4 | **Claims Integrity** | 20% | Whether the label's claims are true and verifiable |
+| 5 | **Sustainability** | 20% | Environmental impact of packaging and ingredients |
+
+### 3.1 Side Effects / Health Risks
+**Score = average of the Ingredient Risk score (3.1a) and the Additive Risk score (3.1b).** Each flagged ingredient is deducted in exactly one of the two.
+
+#### 3.1a Ingredient Risk
+Covers actives, base ingredients and named contaminants. Starts at 100.
 
 | Finding | Deduction |
 |---|---|
@@ -55,18 +69,8 @@ Covers actives, base ingredients and named contaminants. **Additives are scored 
 
 **Position multiplier:** ×1.25 if the ingredient is among the **first five** on the list or is a declared **active ingredient** (round to the nearest whole point; e.g. −4 becomes −5, −12 becomes −15).
 
-### 3.2 Processing Level
-This is the tool's own rubric. It describes how far the product is from its raw materials and is not a risk rating, so it needs no authority.
-
-| Level | Supplements (adapted from the NOVA classification as described by FAO, 2019) | Personal care | Score |
-|---|---|---|---|
-| P1 | Minimally processed (e.g. single whole-food powder) | Simple: plain oils, saponified-oil soap, ≤10 ingredients, no ethoxylated ingredients | 100 |
-| P2 | Processed culinary ingredients or a simple blend | Plant-derived, non-ethoxylated surfactants, ≤20 ingredients | 75 |
-| P3 | Processed: protein isolates or extracts, few additives | Conventional system with ethoxylated surfactants (names containing "-eth", "PEG-") | 50 |
-| P4 | Ultra-processed: isolates plus flavours, sweeteners and other cosmetic additives | >25 ingredients, several ethoxylated ingredients plus synthetic polymers | 25 |
-
-### 3.3 Additives
-Additives are preservatives, colours, fragrance or flavour, sweeteners, fillers, emulsifiers, thickeners, opacifiers, pH adjusters, hydrotropes and chelators added for function rather than for the product's purpose. Ingredients that serve the product's purpose (surfactants, oils, conditioners, humectants such as glycerin or panthenol, protein sources) are not counted as additives.
+#### 3.1b Additive Risk
+Additives are preservatives, colours, fragrance or flavour, sweeteners, fillers, emulsifiers, thickeners, opacifiers, pH adjusters, hydrotropes and chelators added for function rather than for the product's purpose. Ingredients that serve the product's purpose (surfactants, oils, conditioners, humectants such as glycerin or panthenol, protein sources) are not additives. Starts at 100.
 
 | Finding | Deduction |
 |---|---|
@@ -75,13 +79,13 @@ Additives are preservatives, colours, fragrance or flavour, sweeteners, fillers,
 | Plus: Moderate-risk additive | −12 |
 | Plus: Low-risk additive | −4 |
 
-The position multiplier from 3.1 applies to the **risk** deductions here, not to the −3 load.
+The position multiplier applies to the **risk** deductions, not to the −3 load.
 
-### 3.4 Nutrition Balance
-Both categories are scored with the same 20% weight. The checks differ because a supplement nourishes the body from inside and a personal-care product nourishes the skin or hair from outside.
+### 3.2 Nutrition Value (based on ingredients)
+The checks differ because a supplement nourishes the body from inside and a personal-care product nourishes the skin or hair from outside. Starts at 100.
 
-#### 3.4a Supplements: dietary nutrition
-This is based on one serving, with % Daily Value (%DV) taken from the label.
+#### 3.2a Supplements: dietary nutrition
+Based on one serving, with % Daily Value (%DV) from the label.
 
 | Finding | Deduction |
 |---|---|
@@ -90,10 +94,12 @@ This is based on one serving, with % Daily Value (%DV) taken from the label.
 | Saturated fat >20% DV | −10 |
 | Any nutrient above the NIH ODS Tolerable Upper Intake Level at the suggested daily use | −30 |
 | Proprietary blend that hides individual amounts | −15 |
-| Fibre ≥10% DV | +5 (cap 100) |
+| **Processed** formula: protein isolates or extracts with few additives (adapted from the NOVA classification as described by FAO, 2019) | −5 |
+| **Ultra-processed** formula: isolates plus flavours, sweeteners or other cosmetic additives | −15 |
+| Fibre ≥10% DV | +5 |
 
-#### 3.4b Personal care: skin and hair nourishment
-This sub-score asks whether the formula **balances cleansing with nourishment**, or whether it strips and dries the skin or hair. It is the tool's own label-based rubric, like Processing Level, and is not a risk rating. Toxicity is handled in Ingredient Safety, and this sub-score never rates a harm.
+#### 3.2b Personal care: skin and hair nourishment
+Does the formula **balance cleansing with nourishment**, or strip and dry the skin or hair? This is the tool's own label-based rubric, not a risk rating.
 
 **Nourishing ingredients** are plant oils and butters, humectants (glycerin, panthenol, aloe), proteins and amino acids, ceramides, and conditioning agents (silicones, guar hydroxypropyltrimonium chloride, polyquaterniums).
 
@@ -103,12 +109,39 @@ This sub-score asks whether the formula **balances cleansing with nourishment**,
 | Drying alcohol (alcohol denat., SD alcohol, isopropyl alcohol) among the first 5 ingredients | −15 |
 | Nourishing ingredients appear only **after the first preservative**, so likely ≤1% (a "label-dressing" amount) | −10 |
 | **No** nourishing ingredient anywhere on the list | −20 |
-| Leave-on product (oil, lotion, cream) whose first ingredient is a nourishing oil, butter or humectant | +5 (cap 100) |
+| Leave-on product (oil, lotion, cream) whose first ingredient is a nourishing oil, butter or humectant | +5 |
 
-If a section of the ingredient list can't be read or isn't published, score from the known part and add the incomplete-list warning (section 4, "Missing data").
+### 3.3 Conscious Branding
+**Definition:** the **percentage of profits** that the company owning the brand gives to **non-profit work** in its latest reported financial year.
 
-### 3.5 Claim Integrity
-Every front and back claim is checked against `03-key-terms-registry.md` and the registries in `05-regulatory-registries.md`.
+```
+Giving % = Charitable giving to non-profit work ÷ Net profit (after tax) × 100
+```
+
+- **Counts as giving:** cash donations to registered non-profits or charities, grants from the company's own foundation, and India's mandatory CSR spend (Companies Act 2013, §135) when it goes to non-profit work.
+- **Doesn't count:** cause-marketing advertising, in-kind product donations valued at retail price, employee volunteering hours, or a percentage of **sales** stated without a profit figure (convert it to a percentage of profit if both figures are published; otherwise treat it as "a % without a profit base", below).
+- **Company:** the company that owns the brand (e.g. Procter & Gamble for Head & Shoulders). Use the same year for giving and profit.
+- **Sources:** see `02-approved-sources.md` §8. Government filings (SEC, IRS, India's Ministry of Corporate Affairs) or an audited annual report make it **Verified**; the brand's own impact page or report makes it **Self-reported**.
+
+| Giving % of profits | Score |
+|---|---|
+| **More than 50%** | 100 |
+| **20% to 50%** (inclusive) | 50 |
+| **Less than 20%**, including 0% | 20 |
+| The brand claims to give, but gives no percentage or amount that can be tied to profit | 20 |
+| **Researched, and no giving disclosed** (brand site, annual or impact report, and filings all checked) | 20 |
+| **Not yet researched**, or research incomplete | Left out: the other four categories are rescaled to 25% each, with the ⚠️ warning below |
+
+*Bands set by the project owner (2026-11-15): less than 20% → 20; 20–50% → 50; more than 50% → 100.*
+
+- **Self-reported** figures score at face value but are labelled *"self-reported"* in the report.
+- A giving claim printed on the pack ("10% of profits to charity") is **also** checked in Claims Integrity.
+- Report the figure as: *"<Company> gave <X>% of FY<YYYY> net profit to non-profit work (<source>, Verified / Self-reported)."*
+
+> ⚠️ **Conscious Branding not yet verified for <Brand>.** This score uses the other four categories at 25% each. Giving data needed: <what and where to look>.
+
+### 3.4 Claims Integrity
+Every front and back claim is checked against `03-key-terms-registry.md` and the registries in `05-regulatory-registries.md`. Starts at 100.
 
 | Status | Meaning | Deduction |
 |---|---|---|
@@ -119,22 +152,43 @@ Every front and back claim is checked against `03-key-terms-registry.md` and the
 | **False** | Contradicted by the label, ingredients or a registry | −40 |
 | **Missing required statement** | A statement the law requires is absent (e.g. the FDA disclaimer on a supplement structure/function claim) | −15 |
 
+### 3.5 Sustainability
+Environmental impact of the **packaging** and of **ingredients that persist or pollute**. This category answers the brief's questions on plastic, BPA and the environment. Starts at 100.
+
+| Finding | Points | Authority / basis |
+|---|---|---|
+| Primary packaging: glass, aluminium, paper or carton | 0 | — |
+| Recyclable plastic: PET (#1) or HDPE (#2) | −5 | Resin code on pack |
+| Plastic, resin code not shown | −10 | — |
+| Hard-to-recycle plastic: PVC (#3), PS (#6), other (#7, e.g. polycarbonate), multi-layer pouch or sachet | −15 | Resin code on pack |
+| BPA-containing packaging (polycarbonate #7, epoxy-lined can) | −10 more | FDA; EFSA (see `04` §2.2) |
+| Plastic microbeads in a rinse-off product | −30 (and the prohibited-ingredient cap) | Microbead-Free Waters Act 2015 (FDA) |
+| PFAS ingredient ("perfluoro-", "polyfluoro-", PTFE) | −25 | EPA; FDA |
+| Ethoxylated ingredient ("-eth", "PEG-"): 1,4-dioxane and aquatic-toxicity watch-point | −5 each, max −15 | EPA |
+| Persistent synthetic polymer (silicones such as dimethicone, polyquaterniums, acrylates copolymers) | −5 each, max −15 | EPA (persistence) |
+| Refill, concentrate or reduced-packaging format offered | +5 | — |
+| Verified USDA Organic certification | +5 | USDA OID |
+| EPA Safer Choice certified product | +5 | EPA Safer Choice |
+
+- Environmental **claims** ("eco-friendly", "biodegradable") are judged in Claims Integrity, not here.
+- If the packaging can't be seen or isn't described, make no packaging deduction and note *"packaging not confirmed"*.
+
 ---
 
 ## 4. Weights and the Wellbeing Index
 
-**Wellbeing Index (WI) = Σ (sub-score × weight)**, rounded to a whole number (halves round up, e.g. 81.5 → 82).
+**Wellbeing Index (WI) = average of the five category scores** (each weighted 20%), rounded to a whole number (halves round up, e.g. 81.5 → 82).
 
-The same weights apply to **both** supplements and personal care, so every product is scored on all five sub-scores.
-
-| Sub-score | Weight (supplements and personal care) |
+| Category | Weight |
 |---|---|
-| Ingredient Safety | 35% |
-| Processing Level | 15% |
-| Additives | 15% |
-| Nutrition Balance | 20% (dietary nutrition §3.4a / skin and hair nourishment §3.4b) |
-| Claim Integrity | 15% |
+| Side Effects / Health Risks | 20% |
+| Nutrition Value (based on ingredients) | 20% |
+| Conscious Branding | 20% |
+| Claims Integrity | 20% |
+| Sustainability | 20% |
 | **Total** | **100%** |
+
+The same weights apply to **both** supplements and personal care.
 
 ### Hard caps (these override the computed score)
 
@@ -151,22 +205,23 @@ Every product gets a Wellbeing Index, even when data is missing. When data is mi
 
 0. **Check the ingredient pull first.** Before any scoring, run the ingredient pull check in `06-label-reading-guide.md` §6. It confirms the right product, the full list (not just "key ingredients"), and a plausible formula (water and a cleanser in a shampoo, for example). **FAIL** → re-pull from the designated page or ask for a back-label photo. Score with the warning only if neither works.
 1. **Never guess.** If part of the label can't be read or isn't published, say so (`[UNREADABLE: …]` / `[NOT AVAILABLE: …]`). Never fill the gap from memory or from a "typical" formula.
-2. **Score from what is known.** Apply sections 3.1–3.5 to the ingredients and claims that *are* known:
-   - **Ingredient Safety, Additives, Nutrition Balance:** deduct only for known ingredients.
-   - **Processing Level:** if the level can't be judged from the known ingredients, use **P3 (50)**, the typical level for shampoos, soaps and protein powders, and note *"default level: formula not known"*.
-   - **Nutrition Balance (supplements):** if the nutrition or supplement panel is missing, mark it *Insufficient data* and rescale the other weights to 100%. This is the only case where a sub-score is left out.
-3. **Add the incomplete-list warning** to the score wherever it appears (quick answer, score table, verdict):
+2. **Score from what is known.**
+   - **Side Effects, Nutrition Value, Sustainability:** deduct only for known ingredients and packaging.
+   - **Nutrition Value (supplements):** if the nutrition or supplement panel is missing, leave the category out and rescale the others.
+   - **Conscious Branding:** if the giving research isn't done, leave the category out and rescale the others (§3.3).
+   - When a category is left out, the remaining categories share 100% equally (four categories → 25% each).
+3. **Add the warning** to the score wherever it appears (quick answer, score table, verdict):
 
    > ⚠️ **Full ingredient list not available.** This score is based on <N> known ingredients (<source, e.g. "key ingredients from the brand website">). Ingredients we could not see may raise or lower it.
 
-   Label the WI **Provisional** and show **data coverage**, e.g. *"3 known ingredients (key ingredients only)"* or *"13 of an estimated 18+ ingredients"*.
-4. **The warning affects the verdict wording.** If the higher-scoring product has an incomplete list, drop the verdict one level ("Clear winner" → "Leans toward"; "Leans toward" → "Comparable") and add *"pending the full label"*.
-5. **Say what would complete the score**, e.g. a photo of the back label.
+   Label the WI **Provisional** and show **data coverage**, e.g. *"3 known ingredients (key ingredients only)"* or *"13 of an estimated 18+ ingredients"*. Use the Conscious Branding warning (§3.3) when giving data is missing.
+4. **The warning affects the verdict wording.** If the higher-scoring product has an incomplete ingredient list, drop the verdict one level ("Clear winner" → "Leans toward"; "Leans toward" → "Comparable") and add *"pending the full label"*.
+5. **Say what would complete the score**, e.g. a photo of the back label or the company's giving report.
 
 **Confidence:**
-- **High:** full label read, and all ingredients covered by sources.
-- **Medium:** 1–3 ingredients with no authoritative data, or a minor unreadable section.
-- **Low:** the ingredient pull check failed, the full ingredient list is not available, a sub-score was left out, or more than 3 ingredients are not covered by sources.
+- **High:** full label read, all ingredients covered by sources, and giving data verified.
+- **Medium:** 1–3 ingredients with no authoritative data, a minor unreadable section, or self-reported giving data.
+- **Low:** the ingredient pull check failed, the full ingredient list is not available, a category was left out, or more than 3 ingredients are not covered by sources.
 
 ---
 
@@ -193,11 +248,11 @@ Quality ROI     = WI ÷ Price per 100 × 100
 ```
 
 - Compare ROI **only between products in the same currency and unit** (mL with mL, g with g).
-- Higher ROI means more wellbeing per rupee or dollar.
+- Higher ROI means more wellbeing per dollar.
 - ROI is a **tie-breaker and value signal only**. It never overrides a safety cap.
 - *Assumption to confirm with the project owner:* "qty" means net quantity in 100 mL or 100 g units.
 
-**Example:** WI 64, ₹390 for 340 mL → price per 100 mL = ₹114.71 → ROI = 64 ÷ 114.71 × 100 = **55.8**.
+**Example:** WI 64, $8.99 for 13.5 fl oz (399 mL) → price per 100 mL = $2.252 → ROI = 64 ÷ 2.252 × 100 ≈ **2,842**.
 
 ---
 
@@ -215,7 +270,7 @@ Quality ROI     = WI ÷ Price per 100 × 100
 |---|---|
 | ≥10 points | "**Clear winner:** Product X" |
 | 5–9 points | "**Leans toward** Product X" |
-| <5 points | "**Comparable.**" Break the tie by Ingredient Safety, then Claim Integrity, then Quality ROI |
+| <5 points | "**Comparable.**" Break the tie by Side Effects / Health Risks, then Claims Integrity, then Quality ROI |
 
 A capped product can never win against an uncapped one.
 
@@ -223,15 +278,16 @@ A capped product can never win against an uncapped one.
 
 ## 9. Worked arithmetic (personal care, illustrative product)
 
-| Sub-score | Score | Weight | Points |
+| Category | Score | Weight | Points |
 |---|---|---|---|
-| Ingredient Safety | 70 | 0.35 | 24.5 |
-| Processing Level | 50 | 0.15 | 7.5 |
-| Additives | 39 | 0.15 | 5.85 |
-| Nutrition Balance (skin and hair nourishment) | 70 | 0.20 | 14.0 |
-| Claim Integrity | 80 | 0.15 | 12.0 |
-| **WI** | | | **63.85 → 64 (Yellow)** |
+| Side Effects / Health Risks | 64.5 (Ingredient Risk 70, Additive Risk 59) | 20% | 12.9 |
+| Nutrition Value (skin and hair) | 70 | 20% | 14.0 |
+| Conscious Branding | 20 (gives 3% of net profit, which is less than 20%; Verified) | 20% | 4.0 |
+| Claims Integrity | 90 | 20% | 18.0 |
+| Sustainability | 75 | 20% | 15.0 |
+| **WI** | | | **63.9 → 64 (Yellow)** |
 
-Nutrition Balance here: SLES and SLS are both among the first 3 ingredients (−20, −10); the conditioning agents come before the first preservative (no deduction) → 70.
+- **Nutrition Value:** SLES and SLS are both among the first 3 ingredients (−20, −10); conditioning agents come before the first preservative (no deduction) = 70.
+- **Sustainability:** plastic bottle with no resin code (−10), one ethoxylated surfactant (−5), two persistent polymers (−10) = 75.
 
 See `08-sample-comparisons.md` for full examples.

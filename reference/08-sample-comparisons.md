@@ -32,13 +32,15 @@
 
 ## ⚡ Quick answer
 - **For dandruff:** choose **Head & Shoulders**. It is the only one with an FDA-recognised anti-dandruff active (pyrithione zinc 1%).
-- **For dry hair without dandruff:** the evidence **leans toward Sri Sri Tattva** (80 vs 68), *pending the full label*. Its score rests on only 3 known ingredients, so it could drop once the full list is seen.
+- **For dry hair without dandruff:** the two are **comparable** (79 vs 77). Sri Sri Tattva edges ahead on side effects, but that rests on only 3 known ingredients; Head & Shoulders is ahead on claims integrity.
+- **Conscious Branding isn't scored yet** for either brand: no figure for the percentage of profits given to non-profit work was found for Procter & Gamble or Sri Sri Tattva. Both scores use the other four categories at 25% each.
 
 | | Head & Shoulders Classic Clean | Sri Sri Tattva Protein Shampoo |
 |---|---|---|
-| **Wellbeing Index** | 68 / 100 🟡 ⚠️ **Provisional**: list not fully confirmed | 80 / 100 🟢 ⚠️ **Provisional**: incomplete ingredient list |
+| **Wellbeing Index** | 77 / 100 🟡 ⚠️ **Provisional**: list not fully confirmed; giving not yet verified | 79 / 100 🟡 ⚠️ **Provisional**: incomplete ingredient list; giving not yet verified |
 | **Data coverage** | Active + 18 known inactive ingredients (brand page, DailyMed) | 3 known ingredients (key ingredients only: srisritattvausa.com, Amazon.com) |
 | **Ingredient pull check** (`06` §6) | ⚠️ PARTIAL (check 6 flagged) | ❌ **FAIL** (checks 3, 4, 5, 7) |
+| **Gives to non-profit work** | ⚠️ Not yet researched (P&G) | ⚠️ Not yet researched (Sri Sri Tattva) |
 | **Quality ROI** | Needs price | Needs price |
 | **Does the job it's bought for?** | Dandruff: **Yes** (pyrithione zinc 1%) | Dandruff: No active declared · Dry hair: unclear |
 | **Biggest concern** | Zinc pyrithione (banned in EU cosmetics†), fragrance, two harsh surfactants first on the list | A hair-loss claim (drug-like for a US cosmetic); most of the formula is unknown |
@@ -123,34 +125,37 @@ Because the re-pull wasn't possible in this session, both products are scored fr
 
 ## 4. Wellbeing Index
 
-| Sub-score | Weight | Head & Shoulders | Sri Sri Tattva |
+> ⚠️ **Conscious Branding not yet verified for either brand.** Searches of Procter & Gamble's annual and citizenship reports and of Sri Sri Tattva's materials found no figure for the percentage of profits given to non-profit work. Both scores use the other four categories at **25% each** (`01` §3.3). Giving data needed: P&G's foundation Form 990-PF (IRS) and FY net profit (SEC 10-K); Sri Sri Tattva's CSR spend (India's National CSR Portal) and net profit (MCA filings).
+
+| Category | Weight | Head & Shoulders | Sri Sri Tattva |
 |---|---|---|---|
-| Ingredient Safety | 35% | 70 | 100 ⚠️ |
-| Processing Level | 15% | 50 (P3: ethoxylated SLES) | 50 (P3 default: formula not known) |
-| Additives | 15% | 59 ⚠️ | 100 ⚠️ |
-| Nutrition Balance (skin and hair) | 20% | 70 | 100 ⚠️ |
-| Claim Integrity | 15% | 90 | 15 |
-| **Wellbeing Index** | | **68** (68.35) ⚠️ Provisional | **80** (79.75) ⚠️ Provisional |
+| Side Effects / Health Risks | 25%* | **64.5** (Ingredient Risk 70, Additive Risk 59 ⚠️) | **100** ⚠️ (Ingredient Risk 100, Additive Risk 100) |
+| Nutrition Value (skin and hair) | 25%* | 70 | 100 ⚠️ |
+| Conscious Branding | *left out* | ⚠️ Not yet researched | ⚠️ Not yet researched |
+| Claims Integrity | 25%* | 90 | 15 |
+| Sustainability | 25%* | 85 (packaging not confirmed) | 100 ⚠️ (packaging not confirmed) |
+| **Wellbeing Index** | | **77** (77.375) ⚠️ Provisional | **79** (78.75) ⚠️ Provisional |
 | Full ingredient list available? | | ⚠️ Not fully confirmed: active + 18 known | ⚠️ No: 3 known |
 | Caps | | None found | None found |
 
-- **H&S Ingredient Safety:** SLS −5, SLES −5, CAPB −5 (Low ×1.25, top five), pyrithione zinc −15 (Moderate ×1.25, active) = **70**
-- **H&S Additives:** 7 confirmed additives (sodium xylenesulfonate, zinc carbonate, fragrance, sodium chloride, trihydroxystearin, Blue 1, Red 33) −21; fragrance −12; Blue 1 −4; Red 33 −4 = **59**. Provisional, because unconfirmed items could lower it
-- **H&S Nutrition Balance:** SLS (#2) −20, SLES (#3) −10; conditioning agents (dimethicone, guar) come before the first preservative-type ingredient (piroctone olamine) = **70**
-- **H&S Claim Integrity:** "24/7" −10 = **90**
-- **SST Ingredient Safety:** green gram, fenugreek and chickpea extract are not flagged = **100** ⚠️ (only 3 ingredients known)
-- **SST Processing Level:** can't be judged from 3 plant extracts, so the P3 default applies = **50**
-- **SST Additives:** no additives among the known ingredients = **100** ⚠️. Any preservative, fragrance or thickener on the real label would lower this
-- **SST Nutrition Balance:** no harsh cleanser among the known ingredients; nourishing protein sources present = **100** ⚠️. The real cleanser is unknown, and a sulfate there would cost −20
-- **SST Claim Integrity:** 6 Unverifiable claims (−60) and 1 Misleading hair-loss claim (−25) = **15**. Three of these ("sulfate-free", "paraben-free", "vegan") are Unverifiable only because the full list is missing
-- **Why the warning matters:** Sri Sri Tattva's 100s reflect *missing information*, not proven cleanliness. Every shampoo needs a cleansing agent and usually a preservative, and neither is shown. If its cleanser were a sulfate and it contained fragrance, the "sulfate-free" claim would become False and its score would drop to about 69, level with Head & Shoulders. If the full label confirms it is sulfate- and paraben-free, its score would rise
+\* 20% each when Conscious Branding is scored.
+
+- **H&S Side Effects:** Ingredient Risk 70 (SLS −5, SLES −5, CAPB −5 as Low ×1.25 in the top five; pyrithione zinc −15 as Moderate ×1.25, active). Additive Risk 59 (7 confirmed additives −21; fragrance −12; Blue 1 −4; Red 33 −4; provisional, since unconfirmed items could lower it). Average = **64.5**
+- **H&S Nutrition Value:** SLS (#2) −20, SLES (#3) −10; conditioning agents (dimethicone, guar) come before the first preservative-type ingredient = **70**
+- **H&S Claims Integrity:** "24/7" −10 = **90**
+- **H&S Sustainability:** SLES (ethoxylated) −5; dimethicone and polyquaternium-76 (persistent polymers) −10; packaging not confirmed (no deduction) = **85**
+- **SST Side Effects:** green gram, fenugreek and chickpea extract are not flagged, and no additives are known = **100** ⚠️ (only 3 ingredients known)
+- **SST Nutrition Value:** no harsh cleanser among the known ingredients; nourishing protein sources present = **100** ⚠️. The real cleanser is unknown, and a sulfate there would cost −20
+- **SST Claims Integrity:** 6 Unverifiable claims (−60) and 1 Misleading hair-loss claim (−25) = **15**. Three of these ("sulfate-free", "paraben-free", "vegan") are Unverifiable only because the full list is missing
+- **SST Sustainability:** no persistent ingredients among the 3 known; packaging not confirmed = **100** ⚠️
+- **Why the warnings matter:** Sri Sri Tattva's 100s reflect *missing information*, not proven cleanliness. If its real label showed SLES, fragrance and a preservative, its "sulfate-free" claim would become False and its score would drop to about **66**, below Head & Shoulders. Either brand's Conscious Branding score could also move the result by several points once giving data is found
 
 **Quality ROI:** not calculated. Prices weren't supplied, and the two products would need the same currency.
 
 ## 5. Verdict
 
-**Better choice for the household:** **Leans toward Sri Sri Tattva Protein Shampoo** (gap 12 points), *pending the full label*.
-The gap would normally make it a "Clear winner", but the higher-scoring product has an incomplete ingredient list, so the wording drops one level (`01` §4, Missing data).
+**Better choice for the household:** **Comparable** (gap 2 points), *pending the full label and giving data*.
+The tie-break (`01` §8) is Side Effects, which favours Sri Sri Tattva (100 vs 64.5), but that figure rests on 3 known ingredients, so treat this as a genuine toss-up until the back label is checked.
 
 **Trade-offs**
 - **If someone has dandruff:** choose **Head & Shoulders**. It contains an FDA-recognised anti-dandruff active (pyrithione zinc 1%); Sri Sri Tattva declares none.
@@ -188,6 +193,8 @@ Retailer pages (3, 5) are used **only to identify the product and its label text
 ---
 
 # Sample 2: Brand C Whey Protein (Chocolate) vs Brand D Organic Plant Protein
+
+> 🔄 **Rescoring pending:** this sample still uses the earlier sub-scores (Ingredient Safety, Processing Level, Additives, Nutrition Balance, Claim Integrity). It will be rescored on the five 20% categories in `01` §3.
 
 **Date:** 2026-11-14 · **Market:** US (Whole Foods) · **Category:** Supplement · **Input:** Hybrid · **Confidence:** High
 
@@ -280,6 +287,8 @@ Retailer pages (3, 5) are used **only to identify the product and its label text
 ---
 
 # Sample 3: Brand E Herbal Hair Oil vs Brand F Pure Coconut Oil
+
+> 🔄 **Rescoring pending:** this sample still uses the earlier sub-scores (Ingredient Safety, Processing Level, Additives, Nutrition Balance, Claim Integrity). It will be rescored on the five 20% categories in `01` §3.
 
 **Date:** 2026-11-14 · **Market:** US · **Category:** Personal care · **Input:** Photos · **Confidence:** Low (part of Brand E's label is unreadable)
 
