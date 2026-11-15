@@ -40,7 +40,7 @@ CATEGORIES = {
 }
 
 # Labels whose titles contain these are allergen extracts or oral/injected drugs, not personal care
-NOT_PERSONAL_CARE = ["ALLERGEN", "ALLERGENS", "DANDER", "INJECTION", "TABLET", "CAPSULE", "PELLET"]
+NOT_PERSONAL_CARE = ["ALLERGEN", "ALLERGENS", "ALLERGENIC", "DANDER", "INJECTION", "TABLET", "CAPSULE", "PELLET"]
 
 
 def has_word(text: str, words: list[str]) -> bool:
