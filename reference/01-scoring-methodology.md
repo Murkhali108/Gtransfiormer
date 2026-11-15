@@ -1,6 +1,6 @@
 # 01 · Scoring Methodology
 
-**Topic:** How the Wellbeing Index (0–100), its five 20% categories (Side Effects / Health Risks, Nutrition Value, Conscious Branding, Claims Integrity, Sustainability), the risk tiers and the Quality ROI are calculated.
+**Topic:** How the Wellbeing Index (0–100), its five 20% categories (Side Effects / Health Risks, Nutrition Value, Amazon Ratings, Claims Integrity, Sustainability), the risk tiers and the Quality ROI are calculated.
 **Applies to:** Personal care (soaps, shampoos, oils) and supplements.
 **Last reviewed:** 2026-11-15
 
@@ -14,9 +14,9 @@ A product scores well when it **does its job (efficacy) without side effects**, 
 
 - **Body impact:** what the ingredients, additives and contaminants do to the person using it, and what they give it.
 - **Environment impact:** packaging and ingredients that persist or pollute, such as microplastics and plastic-related chemicals.
-- **Brand conduct:** whether the label tells the truth, and how much of the company's profit goes to non-profit work.
+- **Trust and experience:** whether the label tells the truth, and how satisfied US buyers are (Amazon ratings).
 
-Every score is built only from the label, the approved sources in `02-approved-sources.md`, and (for Conscious Branding) company filings and reports listed in `02` §8.
+Every score is built only from the label, the approved sources in `02-approved-sources.md`, and (for Amazon Ratings) the product's amazon.com listing (`02` §8).
 
 ---
 
@@ -42,7 +42,7 @@ Rules:
 
 ## 3. The five categories
 
-> **Structure set by VC feedback (2026-11-15):** five categories, **20% each**. This replaces the earlier five sub-scores (Ingredient Safety, Processing Level, Additives, Nutrition Balance, Claim Integrity). Their rules are kept inside the new categories: ingredient and additive risk → **Side Effects / Health Risks**; processing of supplements → **Nutrition Value**; ethoxylated and persistent ingredients → **Sustainability**.
+> **Structure set by VC feedback (2026-11-15):** five categories, **20% each**. *Update 2026-11-15: Conscious Branding was removed and replaced by Amazon Ratings.* This replaces the earlier five sub-scores (Ingredient Safety, Processing Level, Additives, Nutrition Balance, Claim Integrity). Their rules are kept inside the new categories: ingredient and additive risk → **Side Effects / Health Risks**; processing of supplements → **Nutrition Value**; ethoxylated and persistent ingredients → **Sustainability**.
 
 Each category runs from 0 to 100. None can go below 0 or above 100.
 
@@ -50,7 +50,7 @@ Each category runs from 0 to 100. None can go below 0 or above 100.
 |---|---|---|---|
 | 1 | **Side Effects / Health Risks** | 20% | Ingredients and additives that can harm the user |
 | 2 | **Nutrition Value (based on ingredients)** | 20% | What the ingredients give the body (supplements) or the skin and hair (personal care) |
-| 3 | **Conscious Branding** | 20% | The **percentage of profits** the brand's company gives to non-profit work |
+| 3 | **Amazon Ratings** | 20% | US buyers' average star rating on amazon.com |
 | 4 | **Claims Integrity** | 20% | Whether the label's claims are true and verifiable |
 | 5 | **Sustainability** | 20% | Environmental impact of packaging and ingredients |
 
@@ -111,34 +111,27 @@ Does the formula **balance cleansing with nourishment**, or strip and dry the sk
 | **No** nourishing ingredient anywhere on the list | −20 |
 | Leave-on product (oil, lotion, cream) whose first ingredient is a nourishing oil, butter or humectant | +5 |
 
-### 3.3 Conscious Branding
-**Definition:** the **percentage of profits** that the company owning the brand gives to **non-profit work** in its latest reported financial year.
+### 3.3 Amazon Ratings
+**Definition:** how satisfied US buyers are with the product, from its average star rating on **amazon.com**. It reflects the "does its job" half of wellbeing as buyers experience it.
 
-```
-Giving % = Charitable giving to non-profit work ÷ Net profit (after tax) × 100
-```
+**Source:** the product's **amazon.com** listing only (a US sale website; not amazon.in or other Amazon country sites). Record the **ASIN**, the **average star rating**, the **number of ratings** and the **date read**. Keep a screenshot for the demo.
 
-- **Counts as giving:** cash donations to registered non-profits or charities, grants from the company's own foundation, and India's mandatory CSR spend (Companies Act 2013, §135) when it goes to non-profit work.
-- **Doesn't count:** cause-marketing advertising, in-kind product donations valued at retail price, employee volunteering hours, or a percentage of **sales** stated without a profit figure (convert it to a percentage of profit if both figures are published; otherwise treat it as "a % without a profit base", below).
-- **Company:** the company that owns the brand (e.g. Procter & Gamble for Head & Shoulders). Use the same year for giving and profit.
-- **Sources:** see `02-approved-sources.md` §8. Government filings (SEC, IRS, India's Ministry of Corporate Affairs) or an audited annual report make it **Verified**; the brand's own impact page or report makes it **Self-reported**.
-
-| Giving % of profits | Score |
+| Average rating (out of 5) | Score |
 |---|---|
-| **More than 50%** | 100 |
-| **20% to 50%** (inclusive) | 50 |
-| **Less than 20%**, including 0% | 20 |
-| The brand claims to give, but gives no percentage or amount that can be tied to profit | 20 |
-| **Researched, and no giving disclosed** (brand site, annual or impact report, and filings all checked) | 20 |
-| **Not yet researched**, or research incomplete | Left out: the other four categories are rescaled to 25% each, with the ⚠️ warning below |
+| 4.5 – 5.0 | 100 |
+| 4.0 – 4.4 | 80 |
+| 3.5 – 3.9 | 60 |
+| 3.0 – 3.4 | 40 |
+| Below 3.0 | 20 |
 
-*Bands set by the project owner (2026-11-15): less than 20% → 20; 20–50% → 50; more than 50% → 100.*
+**Rules**
+1. **Match the listing.** It must be the same product, variant and size. If Amazon pools ratings across sizes or variants, say so in the report.
+2. **Few ratings:** 10–49 ratings → score with ⚠️ *"few ratings"* and Medium confidence. **Fewer than 10 ratings** → too few to score; treat as no rating.
+3. **No amazon.com listing, or not yet looked up** → leave the category out; the other four categories are rescaled to 25% each, with the ⚠️ warning below.
+4. **Ratings are opinions, not safety evidence.** They never change an ingredient's risk tier, a claim's status or a cap. A review describing a reaction may prompt a check of FDA recalls and adverse-event reports (`05` §1), but the review itself is not cited as evidence.
+5. **Don't scrape Amazon.** Record ratings by hand from the listing, or through an Amazon API your account is licensed to use.
 
-- **Self-reported** figures score at face value but are labelled *"self-reported"* in the report.
-- A giving claim printed on the pack ("10% of profits to charity") is **also** checked in Claims Integrity.
-- Report the figure as: *"<Company> gave <X>% of FY<YYYY> net profit to non-profit work (<source>, Verified / Self-reported)."*
-
-> ⚠️ **Conscious Branding not yet verified for <Brand>.** This score uses the other four categories at 25% each. Giving data needed: <what and where to look>.
+> ⚠️ **Amazon rating not available for <Product>.** This score uses the other four categories at 25% each. Needed: the product's amazon.com listing (ASIN, stars, number of ratings).
 
 ### 3.4 Claims Integrity
 Every front and back claim is checked against `03-key-terms-registry.md` and the registries in `05-regulatory-registries.md`. Starts at 100.
@@ -183,7 +176,7 @@ Environmental impact of the **packaging** and of **ingredients that persist or p
 |---|---|
 | Side Effects / Health Risks | 20% |
 | Nutrition Value (based on ingredients) | 20% |
-| Conscious Branding | 20% |
+| Amazon Ratings | 20% |
 | Claims Integrity | 20% |
 | Sustainability | 20% |
 | **Total** | **100%** |
@@ -208,19 +201,19 @@ Every product gets a Wellbeing Index, even when data is missing. When data is mi
 2. **Score from what is known.**
    - **Side Effects, Nutrition Value, Sustainability:** deduct only for known ingredients and packaging.
    - **Nutrition Value (supplements):** if the nutrition or supplement panel is missing, leave the category out and rescale the others.
-   - **Conscious Branding:** if the giving research isn't done, leave the category out and rescale the others (§3.3).
+   - **Amazon Ratings:** if there is no amazon.com listing, it hasn't been looked up, or it has fewer than 10 ratings, leave the category out and rescale the others (§3.3).
    - When a category is left out, the remaining categories share 100% equally (four categories → 25% each).
 3. **Add the warning** to the score wherever it appears (quick answer, score table, verdict):
 
    > ⚠️ **Full ingredient list not available.** This score is based on <N> known ingredients (<source, e.g. "key ingredients from the brand website">). Ingredients we could not see may raise or lower it.
 
-   Label the WI **Provisional** and show **data coverage**, e.g. *"3 known ingredients (key ingredients only)"* or *"13 of an estimated 18+ ingredients"*. Use the Conscious Branding warning (§3.3) when giving data is missing.
+   Label the WI **Provisional** and show **data coverage**, e.g. *"3 known ingredients (key ingredients only)"* or *"13 of an estimated 18+ ingredients"*. Use the Amazon Ratings warning (§3.3) when the rating is missing.
 4. **The warning affects the verdict wording.** If the higher-scoring product has an incomplete ingredient list, drop the verdict one level ("Clear winner" → "Leans toward"; "Leans toward" → "Comparable") and add *"pending the full label"*.
-5. **Say what would complete the score**, e.g. a photo of the back label or the company's giving report.
+5. **Say what would complete the score**, e.g. a photo of the back label or the product's amazon.com listing.
 
 **Confidence:**
-- **High:** full label read, all ingredients covered by sources, and giving data verified.
-- **Medium:** 1–3 ingredients with no authoritative data, a minor unreadable section, or self-reported giving data.
+- **High:** full label read, all ingredients covered by sources, and an Amazon rating with 50 or more ratings.
+- **Medium:** 1–3 ingredients with no authoritative data, a minor unreadable section, or an Amazon rating based on 10–49 ratings.
 - **Low:** the ingredient pull check failed, the full ingredient list is not available, a category was left out, or more than 3 ingredients are not covered by sources.
 
 ---
@@ -252,7 +245,7 @@ Quality ROI     = WI ÷ Price per 100 × 100
 - ROI is a **tie-breaker and value signal only**. It never overrides a safety cap.
 - *Assumption to confirm with the project owner:* "qty" means net quantity in 100 mL or 100 g units.
 
-**Example:** WI 64, $8.99 for 13.5 fl oz (399 mL) → price per 100 mL = $2.252 → ROI = 64 ÷ 2.252 × 100 ≈ **2,842**.
+**Example:** WI 80, $8.99 for 13.5 fl oz (399 mL) → price per 100 mL = $2.252 → ROI = 80 ÷ 2.252 × 100 ≈ **3,552**.
 
 ---
 
@@ -282,10 +275,10 @@ A capped product can never win against an uncapped one.
 |---|---|---|---|
 | Side Effects / Health Risks | 64.5 (Ingredient Risk 70, Additive Risk 59) | 20% | 12.9 |
 | Nutrition Value (skin and hair) | 70 | 20% | 14.0 |
-| Conscious Branding | 20 (gives 3% of net profit, which is less than 20%; Verified) | 20% | 4.0 |
+| Amazon Ratings | 100 (4.6 stars from 12,000 ratings) | 20% | 20.0 |
 | Claims Integrity | 90 | 20% | 18.0 |
 | Sustainability | 75 | 20% | 15.0 |
-| **WI** | | | **63.9 → 64 (Yellow)** |
+| **WI** | | | **79.9 → 80 (Green)** |
 
 - **Nutrition Value:** SLES and SLS are both among the first 3 ingredients (−20, −10); conditioning agents come before the first preservative (no deduction) = 70.
 - **Sustainability:** plastic bottle with no resin code (−10), one ethoxylated surfactant (−5), two persistent polymers (−10) = 75.

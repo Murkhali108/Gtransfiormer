@@ -34,7 +34,7 @@
 | **Quality ROI** | NN.N | NN.N |
 | **Does the job it's bought for?** | Yes / No / Unclear | Yes / No / Unclear |
 | **Biggest concern** | <ingredient or claim> | <ingredient or claim> |
-| **Gives to non-profit work** | <X>% of profit / not disclosed / ⚠️ not yet researched | … |
+| **Amazon rating** | <x.x>★ from <n> ratings / ⚠️ not available | … |
 
 ---
 
@@ -49,7 +49,7 @@
 - **Allergens:** <list or "None of the major allergens found">
 - **Identifiers:** <NDC / certifier / lot / expiry>
 - **Packaging:** <material, resin code, refill format>
-- **Owning company and giving:** <company> · <X>% of FY<YYYY> net profit to non-profit work (<source>, Verified / Self-reported) or "not yet researched"
+- **Amazon listing:** ASIN <…> · <x.x>★ from <n> ratings (read YYYY-MM-DD) or "not available"
 - **Unreadable parts:** <list or "None">
 - **Ingredient pull check:** <PASS / PARTIAL / FAIL> · source <url> · checks failed <list> · next step <re-pull / photo / none>
 
@@ -84,7 +84,7 @@ New label terms found: <term → added to 03-key-terms-registry.md / "none">
 |---|---|---|---|
 | Side Effects / Health Risks (avg of Ingredient Risk NN, Additive Risk NN) | 20% | NN | NN |
 | Nutrition Value (dietary / skin and hair) | 20% | NN | NN |
-| Conscious Branding (<X>% of FY<YYYY> profit to non-profit work; Verified / Self-reported / ⚠️ not yet researched) | 20% | NN or ⚠️ left out | NN or ⚠️ left out |
+| Amazon Ratings (<x.x>★ from <n> ratings; ⚠️ few ratings / not available) | 20% | NN or ⚠️ left out | NN or ⚠️ left out |
 | Claims Integrity | 20% | NN | NN |
 | Sustainability (packaging <material, resin>; persistent ingredients) | 20% | NN | NN |
 | **Wellbeing Index** | | **NN** | **NN** |

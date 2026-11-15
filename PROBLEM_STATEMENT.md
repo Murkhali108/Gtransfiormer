@@ -27,10 +27,10 @@ Head & Shoulders versus a protein shampoo. How do we compare the two products?
 1. **Product snapshot:** name, claims made, and the full ingredient list.
 2. **Ingredient risk check:** mark each ingredient of concern as Low, Moderate or High risk, and name the authority behind each rating.
 3. **Claim verification:** check claims like "organic" against the key-terms registry. Flag claims that can't be verified or that mislead.
-4. **Wellbeing Index (0–100) for each product:** show the five category scores, **20% each** (set by VC feedback, 2026-11-15):
+4. **Wellbeing Index (0–100) for each product:** show the five category scores, **20% each** (set by VC feedback, 2026-11-15; Conscious Branding later replaced by Amazon Ratings):
    - **Side Effects / Health Risks**
    - **Nutrition Value** (based on ingredients)
-   - **Conscious Branding**: the percentage of profits the brand's company gives to non-profit work
+   - **Amazon Ratings**: US buyers' average star rating on amazon.com
    - **Claims Integrity**
    - **Sustainability**
 
@@ -75,3 +75,4 @@ Keep each file to one topic so that search within the project finds the right on
 | 2026-11-14 | Added the ingredient pull check step |
 | 2026-11-15 | Added the process flow (PROCESS_FLOW.md) |
 | 2026-11-15 | VC feedback: Wellbeing Index rebuilt on five categories at 20% each: Side Effects / Health Risks, Nutrition Value, Conscious Branding (% of profits to non-profit work), Claims Integrity, Sustainability |
+| 2026-11-15 | Removed Conscious Branding; added Amazon Ratings (20%) |

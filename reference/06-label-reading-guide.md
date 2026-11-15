@@ -47,7 +47,7 @@
 | 9 | **Regulatory identifiers** | Back or bottom | FSSAI licence (14 digits), AYUSH/drug licence no., NDC (US OTC), certifier name, veg/non-veg mark, organic seals |
 | 10 | **Batch / lot, manufacturing and expiry dates, manufacturer and country** | Bottom, crimp or neck | Lot is needed to check recalls |
 | 11 | **Packaging** | Bottle, tub or pouch; base | Material, resin code (♳ 1 – ♹ 7), refill or concentrate format, recycling claims. Needed for **Sustainability** |
-| 12 | **Owning company** | "Manufactured / Distributed by" line | Needed for **Conscious Branding** (giving as a % of profit; `05` §11) |
+| 12 | **Amazon listing** | amazon.com (not on the label) | ASIN, average stars, number of ratings and date read. Needed for **Amazon Ratings** (`05` §11) |
 
 Record each field with a **confidence** mark: ✅ read clearly · ⚠️ partly read (state which part) · ❌ unreadable.
 
@@ -170,7 +170,7 @@ panel: { serving: "33 g", per_serving: { protein_g: 24, added_sugars_g: 2, sodiu
 allergens: ["milk", "soy"]
 identifiers: { ndc: "", certifier: "", lot: "", expiry: "" }
 packaging: { material: "plastic", resin_code: "2 | unknown", refill: false }
-owning_company: "The Procter & Gamble Company"
+amazon: { asin: "", stars: 4.6, ratings_count: 12000, read_on: 2026-11-15 }
 unreadable: ["ingredients after 'Fragrance' (glare)"]
 source: photo | web | hybrid
 pull_check: { status: PASS | PARTIAL | FAIL, source_url: "", checks_failed: [] }

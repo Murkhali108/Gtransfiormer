@@ -15,7 +15,7 @@ Full step-by-step flow, with inputs and outputs: [PROCESS_FLOW.md](PROCESS_FLOW.
 3. **Check the ingredient pull** → `reference/06-label-reading-guide.md` §6. Is it the right product, the full list (not just "key ingredients"), and a plausible formula? FAIL → re-pull or ask for a back-label photo
 4. **Check ingredients** → `reference/04-additives-and-ingredients-of-concern.md`
 5. **Verify claims** → `reference/03-key-terms-registry.md` + `reference/05-regulatory-registries.md`
-6. **Research brand giving** (Conscious Branding: % of profits to non-profit work) → `reference/05-regulatory-registries.md` §11
+6. **Get the Amazon rating** (amazon.com stars and number of ratings) → `reference/05-regulatory-registries.md` §11
 7. **Score** the five categories at 20% each → `reference/01-scoring-methodology.md`
 8. **Cite only approved sources** → `reference/02-approved-sources.md`
 9. **Write the report** → `reference/07-output-template.md` (see the examples in `reference/08-sample-comparisons.md`)
@@ -24,7 +24,7 @@ Full step-by-step flow, with inputs and outputs: [PROCESS_FLOW.md](PROCESS_FLOW.
 
 | File | Topic |
 |---|---|
-| [01-scoring-methodology.md](reference/01-scoring-methodology.md) | Wellbeing Index: five categories at 20% each (Side Effects / Health Risks, Nutrition Value, Conscious Branding, Claims Integrity, Sustainability), risk tiers, Quality ROI |
+| [01-scoring-methodology.md](reference/01-scoring-methodology.md) | Wellbeing Index: five categories at 20% each (Side Effects / Health Risks, Nutrition Value, Amazon Ratings, Claims Integrity, Sustainability), risk tiers, Quality ROI |
 | [02-approved-sources.md](reference/02-approved-sources.md) | Allowed sources and URLs, trust tiers, conflict rules |
 | [03-key-terms-registry.md](reference/03-key-terms-registry.md) | Label-term glossary: legal definition, certifier, red flags |
 | [04-additives-and-ingredients-of-concern.md](reference/04-additives-and-ingredients-of-concern.md) | Flagged ingredients, regulatory status, limits, allergens |

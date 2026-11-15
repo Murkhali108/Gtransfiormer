@@ -33,14 +33,14 @@
 ## ⚡ Quick answer
 - **For dandruff:** choose **Head & Shoulders**. It is the only one with an FDA-recognised anti-dandruff active (pyrithione zinc 1%).
 - **For dry hair without dandruff:** the two are **comparable** (79 vs 77). Sri Sri Tattva edges ahead on side effects, but that rests on only 3 known ingredients; Head & Shoulders is ahead on claims integrity.
-- **Conscious Branding isn't scored yet** for either brand: no figure for the percentage of profits given to non-profit work was found for Procter & Gamble or Sri Sri Tattva. Both scores use the other four categories at 25% each.
+- **Amazon Ratings aren't scored yet** for either product: the amazon.com ratings haven't been looked up. Sri Sri Tattva has an amazon.com listing (ASIN B07GJZQ4HC); the Head & Shoulders Classic Clean listing still needs to be identified. Both scores use the other four categories at 25% each.
 
 | | Head & Shoulders Classic Clean | Sri Sri Tattva Protein Shampoo |
 |---|---|---|
-| **Wellbeing Index** | 77 / 100 🟡 ⚠️ **Provisional**: list not fully confirmed; giving not yet verified | 79 / 100 🟡 ⚠️ **Provisional**: incomplete ingredient list; giving not yet verified |
+| **Wellbeing Index** | 77 / 100 🟡 ⚠️ **Provisional**: list not fully confirmed; Amazon rating not yet read | 79 / 100 🟡 ⚠️ **Provisional**: incomplete ingredient list; Amazon rating not yet read |
 | **Data coverage** | Active + 18 known inactive ingredients (brand page, DailyMed) | 3 known ingredients (key ingredients only: srisritattvausa.com, Amazon.com) |
 | **Ingredient pull check** (`06` §6) | ⚠️ PARTIAL (check 6 flagged) | ❌ **FAIL** (checks 3, 4, 5, 7) |
-| **Gives to non-profit work** | ⚠️ Not yet researched (P&G) | ⚠️ Not yet researched (Sri Sri Tattva) |
+| **Amazon rating** | ⚠️ Not yet read (listing to identify) | ⚠️ Not yet read ([amazon.com, ASIN B07GJZQ4HC](https://www.amazon.com/dp/B07GJZQ4HC)) |
 | **Quality ROI** | Needs price | Needs price |
 | **Does the job it's bought for?** | Dandruff: **Yes** (pyrithione zinc 1%) | Dandruff: No active declared · Dry hair: unclear |
 | **Biggest concern** | Zinc pyrithione (banned in EU cosmetics†), fragrance, two harsh surfactants first on the list | A hair-loss claim (drug-like for a US cosmetic); most of the formula is unknown |
@@ -125,20 +125,20 @@ Because the re-pull wasn't possible in this session, both products are scored fr
 
 ## 4. Wellbeing Index
 
-> ⚠️ **Conscious Branding not yet verified for either brand.** Searches of Procter & Gamble's annual and citizenship reports and of Sri Sri Tattva's materials found no figure for the percentage of profits given to non-profit work. Both scores use the other four categories at **25% each** (`01` §3.3). Giving data needed: P&G's foundation Form 990-PF (IRS) and FY net profit (SEC 10-K); Sri Sri Tattva's CSR spend (India's National CSR Portal) and net profit (MCA filings).
+> ⚠️ **Amazon rating not available for either product.** The amazon.com ratings haven't been read yet, so both scores use the other four categories at **25% each** (`01` §3.3). Needed: the star rating and number of ratings from each amazon.com listing (Sri Sri Tattva: ASIN B07GJZQ4HC; Head & Shoulders Classic Clean: listing to identify), with the date read.
 
 | Category | Weight | Head & Shoulders | Sri Sri Tattva |
 |---|---|---|---|
 | Side Effects / Health Risks | 25%* | **64.5** (Ingredient Risk 70, Additive Risk 59 ⚠️) | **100** ⚠️ (Ingredient Risk 100, Additive Risk 100) |
 | Nutrition Value (skin and hair) | 25%* | 70 | 100 ⚠️ |
-| Conscious Branding | *left out* | ⚠️ Not yet researched | ⚠️ Not yet researched |
+| Amazon Ratings | *left out* | ⚠️ Not yet read | ⚠️ Not yet read |
 | Claims Integrity | 25%* | 90 | 15 |
 | Sustainability | 25%* | 85 (packaging not confirmed) | 100 ⚠️ (packaging not confirmed) |
 | **Wellbeing Index** | | **77** (77.375) ⚠️ Provisional | **79** (78.75) ⚠️ Provisional |
 | Full ingredient list available? | | ⚠️ Not fully confirmed: active + 18 known | ⚠️ No: 3 known |
 | Caps | | None found | None found |
 
-\* 20% each when Conscious Branding is scored.
+\* 20% each once the Amazon ratings are read.
 
 - **H&S Side Effects:** Ingredient Risk 70 (SLS −5, SLES −5, CAPB −5 as Low ×1.25 in the top five; pyrithione zinc −15 as Moderate ×1.25, active). Additive Risk 59 (7 confirmed additives −21; fragrance −12; Blue 1 −4; Red 33 −4; provisional, since unconfirmed items could lower it). Average = **64.5**
 - **H&S Nutrition Value:** SLS (#2) −20, SLES (#3) −10; conditioning agents (dimethicone, guar) come before the first preservative-type ingredient = **70**
@@ -148,13 +148,13 @@ Because the re-pull wasn't possible in this session, both products are scored fr
 - **SST Nutrition Value:** no harsh cleanser among the known ingredients; nourishing protein sources present = **100** ⚠️. The real cleanser is unknown, and a sulfate there would cost −20
 - **SST Claims Integrity:** 6 Unverifiable claims (−60) and 1 Misleading hair-loss claim (−25) = **15**. Three of these ("sulfate-free", "paraben-free", "vegan") are Unverifiable only because the full list is missing
 - **SST Sustainability:** no persistent ingredients among the 3 known; packaging not confirmed = **100** ⚠️
-- **Why the warnings matter:** Sri Sri Tattva's 100s reflect *missing information*, not proven cleanliness. If its real label showed SLES, fragrance and a preservative, its "sulfate-free" claim would become False and its score would drop to about **66**, below Head & Shoulders. Either brand's Conscious Branding score could also move the result by several points once giving data is found
+- **Why the warnings matter:** Sri Sri Tattva's 100s reflect *missing information*, not proven cleanliness. If its real label showed SLES, fragrance and a preservative, its "sulfate-free" claim would become False and its score would drop to about **66**, below Head & Shoulders. Either product's Amazon rating could also move the result by several points once it is read
 
 **Quality ROI:** not calculated. Prices weren't supplied, and the two products would need the same currency.
 
 ## 5. Verdict
 
-**Better choice for the household:** **Comparable** (gap 2 points), *pending the full label and giving data*.
+**Better choice for the household:** **Comparable** (gap 2 points), *pending the full label and the Amazon ratings*.
 The tie-break (`01` §8) is Side Effects, which favours Sri Sri Tattva (100 vs 64.5), but that figure rests on 3 known ingredients, so treat this as a genuine toss-up until the back label is checked.
 
 **Trade-offs**

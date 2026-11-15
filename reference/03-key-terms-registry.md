@@ -151,18 +151,6 @@
 
 ---
 
-## F2. Giving and cause claims (Conscious Branding)
-
-> These claims are checked in **Claims Integrity**. The giving percentage itself is scored in **Conscious Branding** (`01` §3.3).
-
-| Term | Legal definition | Default status | Red flags |
-|---|---|---|---|
-| **"X% of profits to charity"** | None | Verified only if filings or an audited report show it (`02` §8); otherwise Unverifiable | No year, no named recipient, or no profit figure |
-| **"A portion of profits supports…" / "Giving back"** | None | Unverifiable | No percentage or amount → Conscious Branding scores 20 |
-| **"1% for the Planet" member** | None (private programme) | Unverifiable from approved sources | It is 1% of **sales**, not profit; convert only if both figures are published |
-| **"B Corp certified"** | None (private certifier) | Unverifiable from approved sources | Says nothing about the percentage of profits given |
-| **"Non-profit owned" / "profits go to a foundation"** | None | Verified if the owner's non-profit status and the transfers are in filings (IRS, Charity Commission, MCA) | Owner is a non-profit, but the brand's profits are not shown reaching non-profit work |
-
 ## G. Template for new terms
 
 Copy this block and add it in the right section when a new term appears.

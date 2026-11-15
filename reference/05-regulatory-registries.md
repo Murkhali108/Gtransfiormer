@@ -233,20 +233,16 @@ pull_check:
 
 ---
 
-## 11. Conscious Branding lookups (giving as a % of profit)
+## 11. Amazon Ratings lookup
 
-Sources and rules: `02-approved-sources.md` §8. Scoring: `01` §3.3.
+Source rules: `02-approved-sources.md` §8. Scoring: `01` §3.3.
 
-1. **Find the owning company** from the label ("Manufactured / Distributed by"), e.g. Head & Shoulders → The Procter & Gamble Company.
-2. **Net profit:** SEC EDGAR 10-K (US public), MCA21 financial statements (India), or the audited annual report.
-3. **Giving:** in this order:
-   - US: the company foundation's Form 990-PF (IRS search), then the giving total in the 10-K or citizenship report.
-   - India: the National CSR Portal (CSR spend), plus any foundation transfers in the annual report.
-4. **Compute:** giving ÷ net profit × 100, for the same financial year.
-5. **Record:**
+1. **Find the listing** on **amazon.com** by product name or barcode. Confirm brand, variant and size match the product being compared.
+2. **Read:** average stars (one decimal), number of ratings, ASIN and price. Note whether Amazon pools ratings across sizes or variants.
+3. **Record** with the date and a screenshot:
 
-| Company | FY | Giving | Net profit | % | Source | Level |
+| Product | ASIN | Stars | Ratings | Pooled across variants? | Date read | URL |
 |---|---|---|---|---|---|---|
-| <name> | <YYYY> | <amount> | <amount> | <x>% | <URL> | Verified / Self-reported |
+| <name> | <ASIN> | <x.x> | <n> | Yes / No | YYYY-MM-DD | <amazon.com URL> |
 
-If the search isn't finished, mark it **Not yet researched**; the category is then left out of the score with the ⚠️ warning (`01` §3.3).
+4. Fewer than 10 ratings, or no amazon.com listing → **no rating**: the category is left out with the ⚠️ warning (`01` §3.3).
