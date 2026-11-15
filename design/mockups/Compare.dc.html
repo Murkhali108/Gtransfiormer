@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Wellbeing comparison</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#0F6E5C}a:hover{color:#0A5446}
+</style>
+</helmet>
+<div style="width: 390px; height: 1180px; box-sizing: border-box; background: #F6F6F2; font-family: Inter, system-ui, sans-serif; color: #1A1D1A; display: flex; flex-direction: column; padding: 24px 20px; gap: 16px">
+  <nav style="display: flex; align-items: center; gap: 8px">
+    <a href="PullCheck.dc.html" aria-label="Back to label check" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border-radius: 12px; background: #FFFFFF; border: 1px solid #E2E3DC">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A1D1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg>
+    </a>
+    <span style="font-size: 13px; color: #5C635D">Step 2 of 3 · Scores</span>
+  </nav>
+
+  <section aria-label="Quick answer" style="background: #0F6E5C; color: #FFFFFF; border-radius: 18px; padding: 18px; display: flex; flex-direction: column; gap: 8px">
+    <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.6px; text-transform: uppercase; color: #CFE9E1">Quick answer</span>
+    <span style="font-family: 'Space Grotesk', Inter, sans-serif; font-size: 22px; font-weight: 600; line-height: 1.2">Too close to call, until we see the full label</span>
+    <span style="font-size: 14px; line-height: 1.45; color: #E6F4EF">For dandruff, choose Head &amp; Shoulders: it is the only one with an FDA-recognised anti-dandruff ingredient.</span>
+  </section>
+
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+    <section aria-label="Head and Shoulders score" style="background: #FFFFFF; border: 1px solid #E2E3DC; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 6px">
+      <span style="display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600"><span style="width: 10px; height: 10px; border-radius: 3px; background: #2F5C8A"></span>Head &amp; Shoulders</span>
+      <span style="font-family: 'Space Grotesk', Inter, sans-serif; font-size: 44px; font-weight: 700; line-height: 1">77<span style="font-size: 16px; font-weight: 500; color: #5C635D"> /100</span></span>
+      <span style="font-size: 12px; font-weight: 600; color: #7A4A00">Good, with caveats</span>
+      <span style="font-size: 12px; color: #8A4B08; background: #FDF0DC; border-radius: 8px; padding: 4px 8px; align-self: flex-start">Provisional</span>
+    </section>
+    <section aria-label="Sri Sri Tattva score" style="background: #FFFFFF; border: 1px solid #E2E3DC; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 6px">
+      <span style="display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600"><span style="width: 10px; height: 10px; border-radius: 3px; background: #D97012"></span>Sri Sri Tattva</span>
+      <span style="font-family: 'Space Grotesk', Inter, sans-serif; font-size: 44px; font-weight: 700; line-height: 1">79<span style="font-size: 16px; font-weight: 500; color: #5C635D"> /100</span></span>
+      <span style="font-size: 12px; font-weight: 600; color: #7A4A00">Good, with caveats</span>
+      <span style="font-size: 12px; color: #9B1C1C; background: #FBE6E4; border-radius: 8px; padding: 4px 8px; align-self: flex-start">Provisional · 3 ingredients</span>
+    </section>
+  </div>
+
+  <section aria-label="Category scores" style="background: #FFFFFF; border: 1px solid #E2E3DC; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 16px">
+    <div style="display: flex; justify-content: space-between; align-items: baseline">
+      <h2 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-size: 18px; font-weight: 600">Five categories</h2>
+      <span style="font-size: 12px; color: #5C635D">20% each</span>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <span style="font-size: 14px; font-weight: 600">Side effects &amp; health risks</span>
+      <div style="display: flex; align-items: center; gap: 8px"><div style="flex: 1; height: 10px; background: #EDEEE8; border-radius: 99px"><div style="width: 64.5%; height: 10px; background: #2F5C8A; border-radius: 99px"></div></div><span style="width: 36px; text-align: right; font-size: 13px; font-weight: 600">65</span></div>
+      <div style="display: flex; align-items: center; gap: 8px"><div style="flex: 1; height: 10px; background: #EDEEE8; border-radius: 99px"><div style="width: 100%; height: 10px; background: #D97012; border-radius: 99px"></div></div><span style="width: 36px; text-align: right; font-size: 13px; font-weight: 600">100*</span></div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <span style="font-size: 14px; font-weight: 600">Nutrition value for hair and skin</span>
+      <div style="display: flex; align-items: center; gap: 8px"><div style="flex: 1; height: 10px; background: #EDEEE8; border-radius: 99px"><div style="width: 70%; height: 10px; background: #2F5C8A; border-radius: 99px"></div></div><span style="width: 36px; text-align: right; font-size: 13px; font-weight: 600">70</span></div>
+      <div style="display: flex; align-items: center; gap: 8px"><div style="flex: 1; height: 10px; background: #EDEEE8; border-radius: 99px"><div style="width: 100%; height: 10px; background: #D97012; border-radius: 99px"></div></div><span style="width: 36px; text-align: right; font-size: 13px; font-weight: 600">100*</span></div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <span style="font-size: 14px; font-weight: 600">Amazon ratings</span>
+      <span style="font-size: 13px; color: #5C635D; background: #F6F6F2; border-radius: 10px; padding: 8px 10px">Not read yet for either product, so the other four categories count 25% each.</span>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <span style="font-size: 14px; font-weight: 600">Claims integrity</span>
+      <div style="display: flex; align-items: center; gap: 8px"><div style="flex: 1; height: 10px; background: #EDEEE8; border-radius: 99px"><div style="width: 90%; height: 10px; background: #2F5C8A; border-radius: 99px"></div></div><span style="width: 36px; text-align: right; font-size: 13px; font-weight: 600">90</span></div>
+      <div style="display: flex; align-items: center; gap: 8px"><div style="flex: 1; height: 10px; background: #EDEEE8; border-radius: 99px"><div style="width: 15%; height: 10px; background: #D97012; border-radius: 99px"></div></div><span style="width: 36px; text-align: right; font-size: 13px; font-weight: 600">15</span></div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <span style="font-size: 14px; font-weight: 600">Sustainability</span>
+      <div style="display: flex; align-items: center; gap: 8px"><div style="flex: 1; height: 10px; background: #EDEEE8; border-radius: 99px"><div style="width: 85%; height: 10px; background: #2F5C8A; border-radius: 99px"></div></div><span style="width: 36px; text-align: right; font-size: 13px; font-weight: 600">85</span></div>
+      <div style="display: flex; align-items: center; gap: 8px"><div style="flex: 1; height: 10px; background: #EDEEE8; border-radius: 99px"><div style="width: 100%; height: 10px; background: #D97012; border-radius: 99px"></div></div><span style="width: 36px; text-align: right; font-size: 13px; font-weight: 600">100*</span></div>
+    </div>
+
+    <p style="margin: 0; font-size: 12px; line-height: 1.45; color: #5C635D">* Based on 3 known ingredients. Missing information, not proven cleanliness: this could drop once the full label is seen.</p>
+  </section>
+
+  <section aria-label="Value for money" style="background: #FFFFFF; border: 1px solid #E2E3DC; border-radius: 16px; padding: 14px 16px; display: flex; justify-content: space-between; align-items: center; gap: 12px">
+    <div style="display: flex; flex-direction: column; gap: 2px">
+      <span style="font-size: 14px; font-weight: 600">Value for money</span>
+      <span style="font-size: 13px; color: #5C635D">Add prices to compare wellbeing per dollar</span>
+    </div>
+    <button type="button" style="min-height: 44px; padding: 0 14px; border-radius: 12px; border: 1px solid #C9CCC2; background: #FFFFFF; font: 600 14px Inter, sans-serif; color: #1A1D1A; cursor: pointer">Add prices</button>
+  </section>
+
+  <div style="margin-top: auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+    <a href="Details.dc.html" style="display: flex; align-items: center; justify-content: center; min-height: 52px; border-radius: 14px; border: 1.5px solid #0F6E5C; color: #0F6E5C; background: #FFFFFF; font-weight: 600; font-size: 15px; text-decoration: none">See details</a>
+    <a href="Verdict.dc.html" style="display: flex; align-items: center; justify-content: center; min-height: 52px; border-radius: 14px; background: #0F6E5C; color: #FFFFFF; font-weight: 600; font-size: 15px; text-decoration: none">Verdict</a>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":1180}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>
