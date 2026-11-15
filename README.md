@@ -7,6 +7,8 @@ Helps households, especially married couples, choose the healthier of two produc
 
 ## How a comparison works
 
+Full step-by-step flow, with inputs and outputs: [PROCESS_FLOW.md](PROCESS_FLOW.md)
+
 1. **Input:** front and back photos, a web link or barcode, or both (hybrid). Demo product universe: **Whole Foods** and **Sri Sri Tattva**, as sold in the US.
    🇺🇸 **Online lookups use US sale websites only** (e.g. the brand's US site, Amazon.com, Walmart.com). See [PROBLEM_STATEMENT.md](PROBLEM_STATEMENT.md) and `reference/02-approved-sources.md` §7.
 2. **Read the label** → `reference/06-label-reading-guide.md`
@@ -34,7 +36,7 @@ Helps households, especially married couples, choose the healthier of two produc
 
 - **Approve or reject the proposed extra sources** in `02` §5 (EU Commission/SCCS, CDSCO, AYUSH, FTC, OEHHA). The core list leaves personal care in India thin. Ratings marked † depend on them.
 - **Confirm the Quality ROI formula reading** in `01` §6 (WI ÷ price per 100 mL or g × 100).
-- **Process Flow diagram:** not yet in the shared Drive folder. Once added, map its steps to these files.
+- **Process Flow:** drafted in [PROCESS_FLOW.md](PROCESS_FLOW.md). Review it against any diagram in the shared Drive folder.
 
 ## Source document
 Derived from *1. Problem Statement* (project brief). A tracked copy, including later changes, is in [PROBLEM_STATEMENT.md](PROBLEM_STATEMENT.md).

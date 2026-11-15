@@ -43,6 +43,9 @@ Keep a running glossary of label terms (organic, natural, non-GMO, clean label a
 ## Tone
 Plain language that a couple can act on in the store. Inform without alarming. This tool doesn't give medical advice.
 
+## Process flow
+See [PROCESS_FLOW.md](PROCESS_FLOW.md): 8 steps from raw input to report, each with its input, output and topic file.
+
 ## Topic files
 | # | File | Topic |
 |---|---|---|
@@ -63,3 +66,4 @@ Keep each file to one topic so that search within the project finds the right on
 | 2026-11-14 | Added guardrail: US sale websites only for online product lookups |
 | 2026-11-14 | Designated the Sri Sri Tattva USA product page for Protein Shampoo |
 | 2026-11-14 | Added the ingredient pull check step |
+| 2026-11-15 | Added the process flow (PROCESS_FLOW.md) |
