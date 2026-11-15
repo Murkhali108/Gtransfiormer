@@ -15,7 +15,7 @@
 | Scenario | What the user gives | What we do |
 |---|---|---|
 | **A. Photos** | Front and back photos of both products | Extract all 10 fields below from the images |
-| **B. Typed details** | A web link or barcode for each product | Identify the product, fetch its label text **from a US sale website**, and mark the source as "web label" |
+| **B. Typed details** | A web link or barcode for each product | Identify the product, then pull its label in this order: **1) an official label API** (DailyMed for OTC drugs, the NIH Dietary Supplement Label Database for supplements; `05` §10), **2) the designated product page or another US sale website**. Mark the source |
 | **C. Hybrid** | Photos plus links or barcodes | Read the photos first, then fill gaps from the web label (**US sale websites only**). **If they conflict, the photo wins**, and the difference is noted |
 
 ### Guardrails (demo)

@@ -165,3 +165,68 @@ Paste this into every report (`07-output-template.md`, section 6).
 | 4 | USDA OID | `operation name` | | Certified / Not found | Claim status |
 | 5 | FSSAI FoSCoS | `licence no.` | | Valid / Invalid | Claim status |
 | 6 | DailyMed / DSLD | `product name` | | | |
+
+---
+
+## 10. NIH and FDA APIs for label pulls (process steps 1 and 3)
+
+> Use these **official label APIs before any shopping website**. They return the registered label, including the full ingredient list, so the ingredient pull check (`06` §6) can usually PASS. None needs a key for light use. **Check the exact parameters against each API's documentation before building**, and cache every response with its date, so a demo never depends on a live call.
+
+### 10.1 Which API for which product
+
+| Product type | First source | Second source | If neither has it |
+|---|---|---|---|
+| **OTC drug** (anti-dandruff shampoo, sunscreen, medicated soap): has a "Drug Facts" box | **DailyMed** (NIH/NLM) | openFDA drug label | Back-label photo |
+| **Dietary supplement**: has a "Supplement Facts" panel | **NIH Dietary Supplement Label Database (DSLD)** | Brand's US site | Back-label photo |
+| **Cosmetic** (most shampoos, soaps, oils), e.g. Sri Sri Tattva Protein Shampoo | **No US government database lists cosmetic formulas** | Designated product page / brand's US site (`02` §7) | **Back-label photo** (required for a PASS) |
+
+### 10.2 DailyMed: OTC drug labels (NIH/NLM)
+
+| Call | Purpose |
+|---|---|
+| `GET https://dailymed.nlm.nih.gov/dailymed/services/v2/spls.json?drug_name=head%20and%20shoulders` | Find labels (SPLs) by name; returns `setid`, title and version date |
+| `GET https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/{setid}.xml` | The full label: active ingredient and strength, **inactive ingredients**, warnings, directions |
+| `GET https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/{setid}/ndcs.json` | NDC codes for the label (to match a barcode) |
+
+- **Read:** the active ingredient and its strength; the full inactive list, in label order.
+- **Record:** `setid`, version date and URL as the source (e.g. Head & Shoulders Classic Clean: `f28a55cf-eb42-4a0d-a4a3-2bae72b58ac8`).
+- **Pitfall:** one brand has many labels (Classic Clean, 2-in-1, "with Vitamin E"). Check 2 of the pull check (right variant) must match the title exactly.
+
+### 10.3 Dietary Supplement Label Database (DSLD): supplement labels (NIH ODS)
+
+| Call | Purpose |
+|---|---|
+| `GET https://api.ods.od.nih.gov/dsld/v9/search-filter?q=<brand product>` | Search labels; returns DSLD IDs |
+| `GET https://api.ods.od.nih.gov/dsld/v9/label/{id}` | The full label: Supplement Facts rows (amount, %DV), **other ingredients**, serving size, claims, label images |
+
+- **Pitfall:** DSLD keeps old label versions. Use the newest entry date, and compare it with the product photo if one is available.
+
+### 10.4 Supporting NIH APIs (for steps 4 and 6)
+
+| API | Use | Example call |
+|---|---|---|
+| **PubChem PUG REST** | Match an INCI or label name to a chemical identity and synonyms, to look it up in `04` | `GET https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/sodium%20laureth%20sulfate/synonyms/JSON` |
+| **ODS fact sheets API** | Upper Limits and safety notes for Nutrition Balance | `https://ods.od.nih.gov/api/` |
+| **RxNorm (RxNav)** | Standardise the names of OTC active ingredients | `GET https://rxnav.nlm.nih.gov/REST/drugs.json?name=pyrithione%20zinc` |
+
+### 10.5 Related FDA API
+
+| Call | Purpose |
+|---|---|
+| `GET https://api.fda.gov/drug/label.json?search=openfda.brand_name:"head and shoulders"&limit=5` | Second source for OTC labels: `active_ingredient`, `inactive_ingredient` fields |
+| `GET https://api.fda.gov/drug/enforcement.json?search=...` | Recalls (see §1) |
+
+### 10.6 Recording an API pull
+
+Add each pull to the check log (§9) and to the product record's `pull_check` (`06` §7):
+
+```yaml
+pull_check:
+  status: PASS | PARTIAL | FAIL
+  source: dailymed | dsld | openfda | product_page | photo
+  source_url: "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/<setid>.xml"
+  source_id: "<setid or DSLD id>"
+  label_version_date: YYYY-MM-DD
+  pulled_at: YYYY-MM-DD
+  checks_failed: []
+```

@@ -67,6 +67,8 @@
 | NIH LiverTox (NLM/NIDDK) | Liver injury from herbs and supplements | https://www.ncbi.nlm.nih.gov/books/NBK547852/ |
 | NIH PubChem | Chemical identity and synonyms | https://pubchem.ncbi.nlm.nih.gov |
 | NIH DailyMed (NLM) | Official labels of OTC drug products, such as anti-dandruff shampoos | https://dailymed.nlm.nih.gov |
+
+**APIs:** DailyMed, the Dietary Supplement Label Database, PubChem, the ODS fact sheets and RxNorm all have free public APIs. These are the preferred way to pull labels and ingredient data; see `05-regulatory-registries.md` §10 for endpoints and usage.
 | NIEHS / National Toxicology Program | Report on Carcinogens; endocrine-disruptor information | https://ntp.niehs.nih.gov |
 | EFSA | EU food-safety opinions (e.g. BPA, titanium dioxide) | https://www.efsa.europa.eu |
 | WHO | Health guidelines (e.g. non-sugar sweeteners, 2023) | https://www.who.int |
@@ -146,5 +148,5 @@ Pages named by the project owner. These are the **primary web label** for that p
 **Rules**
 1. If the only page for a product is on a non-US site, **don't use it**. Say: *"This product isn't listed on a US sale website."*
 2. Prices are taken in **USD** from the US listing, with the date.
-3. Official label registries are **not** sale websites and stay allowed: DailyMed (NIH) for OTC drug labels, and the NIH Dietary Supplement Label Database.
+3. Official label registries are **not** sale websites and stay allowed: DailyMed (NIH) for OTC drug labels, and the NIH Dietary Supplement Label Database. **Use their APIs first** (`05` §10); go to sale websites only for products they don't cover, such as cosmetics.
 4. If two US listings disagree, prefer the designated product page, then the brand's US site, then the listing with a back-label image. Note the difference.
